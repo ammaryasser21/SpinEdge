@@ -1,0 +1,140 @@
+.contact-page .get-quote {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 10px;
+}
+.contact-page{
+  display: grid;
+  place-items: center;
+}
+
+.contact-page .get-quote .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page .get-quote .left .info {
+  width: 96%;
+}
+
+.contact-page .get-quote .left ul {
+  width: 85%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+}
+
+.contact-page .get-quote .left ul li {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  gap: 10px;
+  align-items: baseline;
+  color: var(--text-ss-color);
+}
+
+.contact-page .get-quote .left ul li span {
+  color: var(--text-s-color);
+}
+
+.contact-page form {
+  background-color: hsl(187, 72%, 93%);
+  width: 42%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  align-items: center;
+}
+.contact-page .links-contact{
+  padding-left: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 47%;
+}
+
+form div input,
+textarea {
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  outline: none;
+  caret-color: var(--text-ss-color);
+  color: var(--text-ss-color);
+  border-color: transparent;
+}
+
+form div input::placeholder,
+textarea::placeholder {
+
+  color: #b5b5b5;
+
+}
+
+form div label {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--text-s-color);
+  font-weight: 700;
+}
+
+form div label span {
+  color: red;
+  font-weight: 700;
+
+}
+
+form div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form textarea {
+  display: flex;
+  flex-direction: column;
+  height: 9rem;
+}
+
+@media (max-width: 768px) {
+
+  .contact-page .get-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.contact-page form {
+  width: 76%;
+}
+
+.contact-page .get-quote .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+}

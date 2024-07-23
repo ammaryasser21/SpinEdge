@@ -1,0 +1,186 @@
+
+footer{
+    padding: 2rem;
+    color: white;
+    background-color: black;
+    width: 95%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+footer .container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+footer .top{
+    display: flex;
+    padding: 2rem 0;
+    color: white;
+    border-bottom: 1px solid white;
+}
+footer .end{
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+
+}
+footer .top .info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+
+}
+
+footer .top .info p{
+margin: 0;
+}
+footer .top .navBrand a{
+   display: flex;
+   flex-direction: row;
+   align-items:center;
+}
+
+footer .top .navBrand a h1{
+    margin: 0;
+    font-size: 43px;
+    color: white;
+}
+
+footer .top .navBrand a span {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+footer .top .info p{
+    font-size: 19px;
+    color: white;
+}
+
+footer .social-links{
+    display: flex;
+    align-items:center;
+    gap:20px;
+}
+
+footer .social-links i{
+font-size: large;
+
+}
+footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    gap: 3rem;
+}
+
+footer .links .link{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .links .link h2{
+font-size: 24px;
+margin: 0;
+}
+footer .links .link ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline-start: 0;
+    gap: 1rem;
+}
+
+footer .links .link ul li a{
+color: white;
+}
+
+footer .links .link:last-child ul li{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 1rem;
+}
+
+footer .links .link:last-child ul li p{
+margin: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem;
+        color: white;
+        background-color: black;
+        width: auto;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    footer .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    footer .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    footer .top .info .navBrand a h1 {
+        margin: 0;
+        font-size: 43px;
+        color: white;
+        text-wrap: nowrap;
+    }
+    footer .top .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    footer .top .info p {
+        font-size: 19px;
+        color: white;
+        text-align: center;
+    }
+    footer .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 3rem;
+        padding: 1rem;
+    }
+
+    footer .links .link {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 33%;
+        text-align: center;
+    }
+
+    footer .links .link ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0;
+        gap: 1rem;
+        text-wrap: pretty;
+    }
+  }

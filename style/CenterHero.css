@@ -1,0 +1,206 @@
+.info.center {
+    text-align: center;
+    width: 90%;
+    padding: 2rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+
+
+.info.center img {
+    z-index: -1;
+}
+
+.info.center p{
+    width: fit-content;
+    position: relative;
+}
+
+.info.center p:first-child::before {
+    content: '';
+    width: 61px;
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
+    background-color: var(--p-color);
+}
+.info.center p:first-child::after {
+    content: '';
+    width: 61px;
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    transform: translateY(50%);
+    background-color: var(--p-color);
+}
+.info.center p:not(:first-child) {
+    font-size: 21px;
+    padding: 0;
+    padding-top: 2rem;
+    width: auto;
+    margin: 0;
+    position: relative;
+    color: var(--text-s-color);
+}
+
+.info.center h1 {
+    font-size: 5rem;
+    margin: 0;
+    width: 79%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.info.center p:first-child {
+    position: relative;
+    padding: 0rem 5rem;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.info.center img[alt="Highlight"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.info.center img[alt="hero1"]{
+    position: absolute;
+    top: 58px;
+    left: 116px;
+    width: 31px;
+}
+
+.info.center p:last-child{
+    position: relative;
+}
+
+.info.center img[alt="hero3"] {
+    position: absolute;
+    width: 69px;
+    bottom: 0;
+    right: 26%;
+}
+
+.info.center img[alt="hero2"]{
+    position: absolute;
+    top: 340px;
+    left: 96px;
+    width: 32px;
+}
+
+.info.center h1 span img[alt="Circle"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 273px;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+
+    .info.center {
+        text-align: center;
+        width: 90%;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    .info.center img[alt="hero3"] {
+        position: absolute;
+        width: 49px;
+        bottom: 0;
+        right: 26%;
+    }
+    .info.center img[alt="hero2"] {
+        position: absolute;
+
+        left: 0px;
+        width: 32px;
+    }
+    .info.center img[alt="Highlight"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .info.center img[alt="hero1"] {
+        position: absolute;
+        top: 87px;
+        left: 20%;
+        width: 31px;
+    }
+
+    .info.center h1 {
+        font-size: 3.5rem;
+        width: auto;
+    }
+}
+@media (max-width:400px) {
+.info.center h1 {
+    font-size: 2rem;
+    width: auto;
+}
+.info.center p:first-child {
+    position: relative;
+    padding: 0rem 3rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info.center p:first-child::after {
+    width: 38px;
+}
+.info.center p:first-child::before {
+    width: 38px;
+}
+.info.center h1 span img[alt="Circle"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 137px;
+}
+.info.center img[alt="Highlight"] {
+    position: absolute;
+    top: 31%;
+    right: 0;
+    width: 40px;
+}
+.info.center p:not(:first-child) {
+    font-size: 13px;
+}
+.info.center img[alt="hero1"] {
+    position: absolute;
+    top: 57px;
+    left: 11%;
+    width: 18px;
+}
+.info.center img[alt="hero3"] {
+    position: absolute;
+    width: 34px;
+    bottom: 77px;
+    right: 18%;
+}
+.info.center img[alt="hero2"] {
+    position: absolute;
+    /* top: 228px; */
+    left: 58px;
+    width: 27px;
+}
+
+}

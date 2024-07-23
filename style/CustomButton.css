@@ -1,0 +1,85 @@
+.buttons {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    text-wrap: nowrap;
+    flex-wrap: wrap;
+}
+.buttons.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+
+
+
+.fa-arrow-right:before {
+    content: "\f061";
+    font-size: smaller;
+}
+
+.buttons a {
+    color: black;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+
+
+.buttons a:first-child {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.buttons a.green:first-child {
+    color: white;
+    background-color: var(--p-color);
+    border: 1px solid var(--p-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.buttons a.none:first-child {
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+}
+@media (max-width: 768px) {
+
+.buttons {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    text-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+}

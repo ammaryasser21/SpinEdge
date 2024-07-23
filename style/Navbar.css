@@ -1,0 +1,143 @@
+/* Common nav styles */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    padding: .5rem 2rem;
+    width: 100%;
+    transition: background-color 0.5s;
+    z-index: 200;
+}
+nav.scrolled {
+    background-color: white;
+}
+.navLinks ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.navLinks a {
+    color: var(--text-s-color);
+    position: relative;
+}
+.navLinks a.active {
+    color: black;
+}
+.navLinks a.active::before, .navLinks a::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    height: 2px;
+    background-color: var(--p-color);
+    transition: width .3s;
+}
+.navLinks a.active::before {
+    width: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navLinks a::before {
+    width: 0;
+    left: 8px;
+}
+.navBrand a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.navBrand span {
+    font-weight: 300;
+}
+.navBrand svg {
+    margin-top: 5px;
+}
+.navContact a {
+    color: white;
+    background-color: var(--p-color);
+    padding: .7rem 2rem;
+    border-radius: 28px;
+    text-wrap: nowrap;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 5px;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+.burger div:nth-child(2) {
+    width: 20px;
+}
+
+.burger.open .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.open .line2 {
+    opacity: 0;
+}
+.burger.open .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 51%;
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: white;
+    }
+    .navLinks {
+        position: absolute;
+        top: -40rem;
+        right: 0;
+        left: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: 70vh;
+        transition: all .5s;
+        justify-content: space-evenly;
+
+}
+    .navLinks.open {
+        display: flex;
+        top: 66px;
+        transition: all .5s;
+        justify-content: space-evenly;
+    }
+    .navLinks ul {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .burger {
+        display: flex;
+    }
+}

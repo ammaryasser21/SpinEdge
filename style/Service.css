@@ -1,0 +1,140 @@
+.AboutPage{
+    display: grid;
+    place-items: center;
+}
+.service-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+.service-cards .card {
+    width: 46%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    justify-content: space-evenly;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.service-cards .card:nth-child(1){
+background-color: #DDEDCC;
+}
+.service-cards .card:nth-child(2){
+background-color: #CCEDDF;
+}
+.service-cards .card:nth-child(3){
+background-color: #CCD3ED;
+}
+.service-cards .card:nth-child(4){
+background-color: #E6CCED;
+}
+
+
+.service-cards .card img:first-child{
+    width: 100px;
+    padding: 1rem;
+}
+
+
+.service-cards .card img:nth-child(2){
+    position: absolute;
+    width: 62%;
+    top: 0px;
+    left: 38%;
+}
+.service-cards .card h1{
+    font-size: 45px;
+    padding-left:1rem;
+}
+
+.service-cards .card p{
+    line-height: 1.7rem;
+    padding-left:1rem;
+    color: var(--text-ss-color);
+}
+
+.service-cards .buttons a.none:first-child{
+    padding: 0;
+    padding-top: 2rem;
+    padding-left:1rem;
+}
+@media (max-width: 768px) {
+    
+
+    .service-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+.service-cards .card {
+    width:90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    justify-content: space-evenly;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    align-items: center;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+}
+
+.service-cards .card:nth-child(1){
+background-color: #DDEDCC;
+}
+.service-cards .card:nth-child(2){
+background-color: #CCEDDF;
+}
+.service-cards .card:nth-child(3){
+background-color: #CCD3ED;
+}
+.service-cards .card:nth-child(4){
+background-color: #E6CCED;
+}
+
+
+.service-cards .card img:first-child{
+    width: 100px;
+    padding: 1rem;
+}
+
+
+.service-cards .card img:nth-child(2){
+    position: absolute;
+    width: 62%;
+    top: 0px;
+    left: 38%;
+}
+.service-cards .card h1{
+    font-size: 45px;
+    padding-left:1rem;
+}
+
+.service-cards .card p{
+    line-height: 1.7rem;
+    padding-left:1rem;
+    color: var(--text-ss-color);
+}
+
+.service-cards .buttons a.none:first-child{
+    padding: 0;
+    padding-top: 2rem;
+    padding-left:1rem;
+}
+
+
+}

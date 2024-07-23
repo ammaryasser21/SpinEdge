@@ -1,0 +1,95 @@
+.info {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.info .highlight img {
+    position: absolute;
+    top: 0;
+    right: 34px;
+}
+
+.info p:first-child::before {
+    content: '';
+    width: 122px;
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
+    background-color: var(--p-color);
+}
+.info p.none::before {
+    display: none;
+}
+
+.info p.none {
+    display: none;
+}
+
+.info h1 {
+    font-size: 5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.info h2 {
+    font-size: 3rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.info h1 span {
+ 
+        position: relative;
+        width: fit-content;
+        display: flex;
+        padding: 0 1.5rem;
+}
+
+.info p:first-child {
+    position: relative;
+    padding-left: 8rem;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.info p:not(:first-child) {
+    font-size: larger;
+    padding: 1rem 0;
+    padding-right: 2px;
+    color: var(--text-s-color);
+}
+
+@media (max-width: 1111px) {
+    .info {
+        width: 100%;
+        padding-left: 1rem;
+    }
+}
+
+
+@media (max-width:400px) {
+    .info .circle {
+        position: absolute;
+        top: 0;
+        left: -37px;
+        z-index: -1;
+    }
+}
