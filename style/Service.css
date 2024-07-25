@@ -38,8 +38,8 @@ background-color: #E6CCED;
 
 
 .service-cards .card img:first-child{
-    width: 100px;
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 

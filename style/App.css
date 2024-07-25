@@ -51,10 +51,13 @@ section:not(:first-child){
   margin:4rem 0;
 }
 .container{  
-  padding-top: 5rem;
   max-width: 1170px;
   display: grid;
   place-items: center;
+}
+
+section:first-child{
+  padding-top: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -67,5 +70,9 @@ section:not(:first-child){
 
   section:not(:first-child){
     padding:2rem 0;
+  }
+
+  section:first-child{
+    padding-top: 1rem;
   }
 }

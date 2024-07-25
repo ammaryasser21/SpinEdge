@@ -16,7 +16,7 @@
     z-index: -1;
 }
 
-.info.center p{
+.info.center p {
     width: fit-content;
     position: relative;
 }
@@ -31,6 +31,7 @@
     transform: translateY(50%);
     background-color: var(--p-color);
 }
+
 .info.center p:first-child::after {
     content: '';
     width: 61px;
@@ -41,11 +42,13 @@
     transform: translateY(50%);
     background-color: var(--p-color);
 }
+
 .info.center p:not(:first-child) {
     font-size: 21px;
     padding: 0;
     padding-top: 2rem;
-    width: auto;
+    width: 80%;
+    line-height: 1.5;
     margin: 0;
     position: relative;
     color: var(--text-s-color);
@@ -71,41 +74,46 @@
 
 .info.center img[alt="Highlight"] {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
 }
 
-.info.center img[alt="hero1"]{
+.info.center img[alt="hero1"] {
     position: absolute;
-    top: 58px;
-    left: 116px;
+    top: 12%;
+    left: 7%;
     width: 31px;
 }
 
-.info.center p:last-child{
+.info.center p:last-child {
     position: relative;
 }
 
 .info.center img[alt="hero3"] {
     position: absolute;
-    width: 69px;
-    bottom: 0;
+    bottom: 8%;
     right: 26%;
 }
 
-.info.center img[alt="hero2"]{
+.info.center img[alt="hero2"] {
     position: absolute;
-    top: 340px;
-    left: 96px;
+    top: 73%;
+    left: 6%;
     width: 32px;
 }
 
-.info.center h1 span img[alt="Circle"] {
+
+.info.center h1 span {
+    position: relative;
+}
+
+.info.center h1 span svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 273px;
+    z-index: -1;
 }
 
 
@@ -121,23 +129,7 @@
         align-items: center;
     }
 
-    .info.center img[alt="hero3"] {
-        position: absolute;
-        width: 49px;
-        bottom: 0;
-        right: 26%;
-    }
-    .info.center img[alt="hero2"] {
-        position: absolute;
 
-        left: 0px;
-        width: 32px;
-    }
-    .info.center img[alt="Highlight"] {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     .info.center img[alt="hero1"] {
         position: absolute;
         top: 87px;
@@ -146,61 +138,55 @@
     }
 
     .info.center h1 {
-        font-size: 3.5rem;
         width: auto;
+        font-size: 12vw;
+    }
+
+    .info.center img[alt="Highlight"] {
+        width: 70px;
+        top:-21px;
     }
 }
-@media (max-width:400px) {
-.info.center h1 {
-    font-size: 2rem;
-    width: auto;
-}
-.info.center p:first-child {
-    position: relative;
-    padding: 0rem 3rem;
-    font-size: 18px;
-    font-weight: 500;
-}
 
-.info.center p:first-child::after {
-    width: 38px;
-}
-.info.center p:first-child::before {
-    width: 38px;
-}
-.info.center h1 span img[alt="Circle"] {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 137px;
-}
-.info.center img[alt="Highlight"] {
-    position: absolute;
-    top: 31%;
-    right: 0;
-    width: 40px;
-}
-.info.center p:not(:first-child) {
-    font-size: 13px;
-}
-.info.center img[alt="hero1"] {
-    position: absolute;
-    top: 57px;
-    left: 11%;
-    width: 18px;
-}
-.info.center img[alt="hero3"] {
-    position: absolute;
-    width: 34px;
-    bottom: 77px;
-    right: 18%;
-}
-.info.center img[alt="hero2"] {
-    position: absolute;
-    /* top: 228px; */
-    left: 58px;
-    width: 27px;
-}
+@media (max-width:400px) {
+    .info.center h1 {
+        width: auto;
+    }
+
+    .info.center p:first-child {
+        position: relative;
+        padding: 0rem 3rem;
+        font-size: 4.5vw;
+    }
+
+    .info.center p:first-child::after {
+        width: 38px;
+    }
+
+    .info.center p:first-child::before {
+        width: 38px;
+    }
+
+    .info.center h1 span img[alt="Circle"] {
+        width: 46vw;
+    }
+
+    .info.center img[alt="Highlight"] {
+        width: 40px;
+    }
+
+    .info.center p:not(:first-child) {
+        font-size: 4vw;
+    }
+
+    .info.center img[alt="hero1"] {
+        top: 57px;
+        left: 11%;
+        width: 7vw;
+    }
+
+    .info.center img[alt="hero3"] {
+        width: 13vw;
+    }
 
 }

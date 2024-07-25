@@ -7,7 +7,8 @@
   gap: 20px;
   border-radius: 10px;
 }
-.contact-page{
+
+.contact-page {
   display: grid;
   place-items: center;
 }
@@ -57,7 +58,8 @@
   -o-border-radius: 20px;
   align-items: center;
 }
-.contact-page .links-contact{
+
+.contact-page .links-contact {
   padding-left: 1rem;
 }
 
@@ -125,16 +127,22 @@ form textarea {
     justify-content: center;
     gap: 20px;
     border-radius: 10px;
+  }
+
+  .contact-page form {
+    width: 76%;
+  }
+
+  .contact-page .get-quote .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.contact-page form {
-  width: 76%;
-}
+@media (max-width:400px) {
 
-.contact-page .get-quote .left {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
+  form div {
+    width: 100%;
+  }
 }

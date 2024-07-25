@@ -3,7 +3,7 @@ footer{
     padding: 2rem;
     color: white;
     background-color: black;
-    width: 95%;
+    width: 100%;
     display: grid;
     place-items: center;
     overflow: hidden;

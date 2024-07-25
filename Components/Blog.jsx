@@ -5,26 +5,31 @@ import Info from "./Info";
 import CustomButton from "./CustomButton";
 import BlogCards from "./BlogCards";
 import CenterHero from "./CenterHero";
+import Image from "next/image";
 
 const Blog = () => {
   return (
     <div className="blog-page">
       <CenterHero
         showImages={true}
-        buttonText="Contact Us"
-        buttonLink="/contact"
-        showArrow={false}
         p1="Our Blog"
         p2="Welcome to ElevateSphere's blog, where we dive into the ever-evolving world of digital innovation."
-        h1BeforeSpan="Navigating the"
-        h1AfterSpan="Sphere"
+        prefix="Navigating the"
+        suffix="Sphere"
         span="Digital"
+        button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
+        circle={{ Width: "267px", Height: "94px", Color: "#9BBA90" }}
       />
 
       <section className="blog-cards">
         <div className="card">
           <div className="img">
-            <img src="/images/blog1.png" alt="" />
+            <Image
+              src="/images/blog1.png"
+              alt="Blog1"
+              width={196}
+              height={196}
+            />
           </div>
           <div className="content-card">
             <div className="first">
@@ -41,7 +46,12 @@ const Blog = () => {
         </div>
         <div className="card">
           <div className="img">
-            <img src="/images/blog2.png" alt="" />
+            <Image
+              src="/images/blog2.png"
+              alt="Blog2"
+              width={196}
+              height={196}
+            />
           </div>
           <div className="content-card">
             <div className="first">

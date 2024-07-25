@@ -1,33 +1,24 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Card = ({
-  imgSrc,
-  altText,
-  title,
-  description,
-  linkTo,
-  linkText,
-  withLink,
-  BlogCards,
-}) => (
+const Card = ({ img, title, description, link }) => (
   <div className="card">
     <div className="img">
-      <img src={imgSrc} alt={altText} />
+      <Image
+        src={img.Src}
+        alt={img.alt}
+        width={img.width}
+        height={img.height}
+      />
     </div>
-    {BlogCards && (
-      <div className="Blog-p">
-        <p></p>
-        <p></p>
-      </div>
-    )}
     <h2>{title}</h2>
     <p>
-      {description} {withLink && <Link href={linkTo}>{linkText}</Link>}
+      {description} {link.withLink && <Link href={link.To}>{link.Text}</Link>}
     </p>
-    {linkTo && !withLink && (
-      <Link href={linkTo}>
-        {linkText}
+    {link.To && !link.withLink && (
+      <Link href={link.To}>
+        {link.Text}
         <span className="fas fa-arrow-right"></span>
       </Link>
     )}

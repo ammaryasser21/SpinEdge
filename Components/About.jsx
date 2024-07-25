@@ -1,5 +1,5 @@
-'use client'
-import React, { useState, useEffect } from "react";
+"use client";
+import React from "react";
 import "../style/About.css";
 import ContactComp from "./ContactComp.jsx";
 import Info from "./Info.jsx";
@@ -22,10 +22,10 @@ const Stats = () => (
   </section>
 );
 
-const Card = ({ imgSrc, title, description }) => (
+const Card = ({ img, title, description }) => (
   <div className="card">
     <div className="img">
-      <img src={imgSrc} alt={title}/>
+      <Image src={img.Src} alt={title} width={img.Width} height={img.Height} />
     </div>
     <div className="card-content">
       <h2>{title}</h2>
@@ -35,31 +35,17 @@ const Card = ({ imgSrc, title, description }) => (
 );
 
 const About = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <div className="AboutPage">
       <CenterHero
         showImages={true}
-        buttonText="Contact Us"
-        buttonLink="/contact"
-        showArrow={false}
         p1="About The Team"
         p2="At ElevateSphere, We are not just another digital marketing agency; we are your dedicated partner in transforming your digital vision into reality"
-        h1BeforeSpan="Transforming"
-        h1AfterSpan="Visions into Reality"
+        prefix="Transforming"
+        suffix="Visions into Reality"
         span="Digital"
+        button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
+        circle={{ Width: "275px", Height: "88px", Color: "#B7BA90" }}
       />
       <Stats />
       <section className="OurMission">
@@ -71,13 +57,13 @@ const About = () => {
           p1="Our Mission"
           p2="At ElevateSphere, our mission is clear: to empower businesses to thrive in the digital landscape. We are dedicated to providing tailored, innovative solutions that propel our clients towards their goals."
           h2="Empowering Your Digital Success"
-          center={!!isMobile}
         />
         <div className="img">
-          <img
+          <Image
             src="/images/aboutUsPage.png"
             alt="About Us"
-    
+            width={470}
+            height={433}
           />
         </div>
       </section>
@@ -92,25 +78,43 @@ const About = () => {
         <div className="cards">
           {[
             {
-              imgSrc: "/images/ourvision1.png",
+              img: {
+                Src: "/images/ourvision1.png",
+                Width: "64",
+                Height: "64",
+              },
               title: "Experience",
               description:
                 "With years of experience, we have a proven track record of success.",
             },
             {
-              imgSrc: "/images/ourvision2.png",
+              img: {
+                Src: "/images/ourvision2.png",
+                Width: "64",
+                Height: "64",
+              },
               title: "Expert Team",
               description:
                 "Our talented team of developers, designers, branding experts, and marketing strategists work together to deliver outstanding results.",
             },
             {
-              imgSrc: "/images/ourvision3.png",
+              img: {
+                Src: "/images/ourvision3.png",
+                Width: "64",
+                Height: "64",
+              },
+
               title: "Innovation",
               description:
                 "We stay at the forefront of industry trends and technology to provide the best solutions for our clients.",
             },
             {
-              imgSrc: "/images/ourvision4.png",
+              img: {
+                Src: "/images/ourvision4.png",
+                Width: "64",
+                Height: "64",
+              },
+
               title: "Client-Centric",
               description:
                 "Your success is our success, and we are dedicated to your satisfaction.",
@@ -118,9 +122,9 @@ const About = () => {
           ].map((card) => (
             <Card
               key={card.title}
-              imgSrc={card.imgSrc}
               title={card.title}
               description={card.description}
+              img={card.img}
             />
           ))}
         </div>

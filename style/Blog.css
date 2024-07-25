@@ -79,6 +79,7 @@
 
 .blog-cards .card .content-card .first p:nth-child(2) {
     color: var(--text-ss-color);
+
 }
 
 .blog-cards .card .content-card h1 {
@@ -87,15 +88,16 @@
 
 .blog-cards .card .content-card p {
     color: var(--text-ss-color);
+    line-height: 1.5;
 }
 
 .Blog-Home .top .buttons {
     width: auto;
-    margin: 1rem 0;
+    margin: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     text-wrap: nowrap;
     flex-wrap: wrap;

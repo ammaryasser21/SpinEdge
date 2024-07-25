@@ -1,14 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogCards = () => {
   return (
     <div className="cards">
       <div className="card">
         <div className="img">
-          <img
+          <Image
             src="/images/blog1.png"
             alt="Blog 1"
+            width={196}
+            height={196}
           />
         </div>
         <div className="Blog-p">
@@ -25,10 +28,11 @@ const BlogCards = () => {
       </div>
       <div className="card">
         <div className="img">
-          <img
+          <Image
             src="/images/blog2.png"
             alt="Blog 2"
-
+            width={196}
+            height={196}
           />
         </div>
         <div className="Blog-p">
@@ -44,10 +48,11 @@ const BlogCards = () => {
       </div>
       <div className="card">
         <div className="img">
-          <img
+          <Image
             src="/images/blog3.png"
             alt="Blog 3"
-
+            width={196}
+            height={196}
           />
         </div>
         <div className="Blog-p">

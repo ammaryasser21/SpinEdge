@@ -1,10 +1,13 @@
 .Hero-Home {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5.9rem;
+    justify-content: space-between;
     position: relative;
     flex-wrap: wrap;
+}
+
+section.Hero-Home{
+    padding-top: 0;
 }
 
 .Hero-Home h1 span img{
@@ -27,24 +30,27 @@
     top: -113px;
 }
 
-.art img {
+/* .art img {
     height: 41rem;
-}
+} */
 
 .info {
     width: 58%;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
 }
 
-.info .circle img {
+.info h1 span svg {
     position: absolute;
-    top: 0;
-    left: -16px;
-    width: 20rem;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
     z-index: -1;
+    -webkit-transform:translate(-50%,-50%) ;
+    -moz-transform:translate(-50%,-50%) ;
+    -ms-transform:translate(-50%,-50%) ;
+    -o-transform:translate(-50%,-50%) ;
 }
 
 .info .highlight img {
@@ -65,7 +71,7 @@
 }
 
 .info h1 {
-    font-size: 5rem;
+    font-size:4.4rem;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -99,6 +105,7 @@
     font-size: larger;
     padding: 1rem 0;
     padding-right: 2px;
+    line-height: 1.5;
     color: var(--text-s-color);
 }
 
@@ -181,6 +188,7 @@
 .AboutUs-Home .left .bottom {
     padding: 1rem;
     max-width: 100%;
+    padding-bottom: 0;
     background-color: #E8E8FF;
     border-top-left-radius: 33px;
     border-top-right-radius: 33px;
@@ -325,15 +333,15 @@
 .Services-Home .cards .card h2 {
     font-size: 36px;
     margin: 0;
+    font-weight: 600;
 }
 
 .Services-Home .cards .card p {
     font-size: 16px;
     color: var(--text-s-color);
-
     margin: 0;
+    line-height: 1.5;
 }
-
 .Services-Home .cards .card a {
     font-size: 16px;
     color: black;
@@ -460,6 +468,7 @@
 
 .Blog-Home .cards .card p {
     color: var(--text-ss-color);
+    line-height: 1.5;
 }
 
 .Blog-Home .cards .card p a {
@@ -539,6 +548,8 @@
     .Hero-Home {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items:center;
         gap: 40px;
         position: static;
     }
@@ -731,7 +742,7 @@
         margin-bottom: 2rem;
     }
 
-    .AboutUs-Home .info.center {
+    .AboutUs-Home .info {
         width: 100%;
     }
 
@@ -958,7 +969,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
     }
 
         .Blog-Home .top .info {

@@ -13,7 +13,7 @@ const Info = ({
   center
 }) => {
   return (
-    <div className={`info ${center===true ? 'center' : ''}`}>
+    <div className={`info ${center ? 'center' : ''}`}>
       <p className={`${!p1 ? 'none' : ''}`}>{p1}</p>
       {h2 ? <h2>{h2}</h2> : <h1>{h1}</h1>}
       <p className={`${!p2 ? 'none' : ''}`}>{p2}</p>

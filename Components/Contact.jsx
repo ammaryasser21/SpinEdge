@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import "../style/Contact.css";
 import CenterHero from "./CenterHero";
@@ -24,12 +24,12 @@ const Contact = () => {
     <div className="contact-page">
       <CenterHero
         showImages={true}
-        showArrow={false}
         p1="Contact"
         p2="Welcome to ElevateSphere's blog, where we dive into the ever-evolving world of digital innovation."
-        h1BeforeSpan="Get in "
-        h1AfterSpan="with ElevateSphere"
-        span="Touch "
+        prefix=""
+        suffix="with ElevateSphere"
+        span="Get in Touch"
+        circle={{ Width: "449px", Height: "88px", Color: "#B290BA" }}
       />
 
       <section className="get-quote">
@@ -104,8 +104,7 @@ const Contact = () => {
               buttons={[
                 {
                   title: "Send Message",
-                  classColor: "",
-                  to: "",
+                  to:"",
                   showArrow: true,
                 },
               ]}
@@ -118,7 +117,7 @@ const Contact = () => {
       <section className="Blog-Home">
         <div className="top">
           <div className="top">
-            <Info p1="Blog" h2="Navigating the Digital " center={!!isMobile} />
+            <Info p1="Blog" h2="Navigating the Digital " />
             <CustomButton
               buttons={[
                 {
@@ -128,13 +127,11 @@ const Contact = () => {
                   showArrow: false,
                 },
               ]}
-              center={!!isMobile}
             />
           </div>
         </div>
         <BlogCards />
       </section>
-
       <ContactComp />
     </div>
   );

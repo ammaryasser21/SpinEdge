@@ -85,8 +85,8 @@
     display: flex;
     gap: 22px;
     flex-direction: row;
-    padding: 2rem;
-    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    border-radius: 34px;
 }
 
 .OurVision .card:nth-child(1) {
@@ -109,29 +109,27 @@
     background-color: white;
     display: grid;
     place-items: center;
-    border-radius: 16px;
+    border-radius: 21px;
+    padding: 0 1rem;
 }
 
-.OurVision .card .img img {
-    width: 80%;
-}
 
 .OurVision .card .card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
     width: 80%;
 }
 
 .OurVision .card .card-content h2 {
     font-size: 36px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .OurVision .card .card-content p {
     color: var(--text-ss-color);
+    line-height: 1.5;
 }
 
 /* Responsive Design */

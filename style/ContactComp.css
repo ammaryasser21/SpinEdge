@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #ccede0;
+    background-color: #F0FDF7;
     border-radius: 50px;
     gap: 60px;
     -webkit-border-radius: 50px;
@@ -12,18 +12,15 @@
     -o-border-radius: 50px;
     padding: 0;
 }
-.Contact-Home img{
-    width: 40%;
-}
 
 .Contact-Home .info{
-    width: 60%;
+    width: 50%;
  display: flex;
  flex-direction: column;
  justify-content: space-evenly;
 }
 .Contact-Home .info h1{
-    font-size: 67px;
+    font-size: 70px;
     margin: 0;
 }
 .Contact-Home .buttons a{
@@ -51,7 +48,6 @@
         margin: 2rem 0;
         display: flex;
         flex-direction: column;
-        background-color: #ccede0;
         border-radius: 50px;
         gap: 9px;
         -webkit-border-radius: 50px;
@@ -68,6 +64,7 @@
     
     .Contact-Home .info {
         padding: 2rem;
+        width: 100%;
     }
     .Contact-Home .info h1{
         font-size: 57px;
@@ -82,6 +79,16 @@
         border-radius: 24px;
         padding: 12px 22px;
         border: none;
+    }
+    .Contact-Home .buttons {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        text-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
     
 }

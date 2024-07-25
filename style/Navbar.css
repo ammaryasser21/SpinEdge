@@ -102,9 +102,9 @@ nav.scrolled {
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        gap: 51%;
+        gap: 49%;
         width: 100%;
         padding: 1rem 2rem;
         background-color: white;
