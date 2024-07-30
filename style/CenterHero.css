@@ -15,8 +15,15 @@
 }
 
 .info.center p {
-    width: fit-content;
+    width: auto;
     position: relative;
+}
+
+.info.center p:first-child {
+    position: relative;
+    padding: 0rem 5rem;
+    font-size: 27px;
+    font-weight: 500;
 }
 
 .info.center p:first-child::before {
@@ -63,11 +70,21 @@
     position: relative;
 }
 
-.info.center p:first-child {
+.info.center p:last-child {
     position: relative;
-    padding: 0rem 5rem;
-    font-size: 27px;
-    font-weight: 500;
+}
+
+.info.center h1 span {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.info.center h1 span svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .info.center img[alt="Highlight"] {
@@ -84,10 +101,6 @@
     width: 31px;
 }
 
-.info.center p:last-child {
-    position: relative;
-}
-
 .info.center img[alt="hero3"] {
     position: absolute;
     bottom: 8%;
@@ -102,17 +115,7 @@
 }
 
 
-.info.center h1 span {
-    position: relative;
-}
 
-.info.center h1 span svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
 
 
 

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const Card = ({ img, title, description, link }) => (
+const Card = ({ img, title, description, link ,font}) => (
   <div className="card">
     <div className="img">
       <Image
@@ -13,7 +12,7 @@ const Card = ({ img, title, description, link }) => (
       />
     </div>
     <h2>{title}</h2>
-    <p>
+    <p className={font.className}>
       {description} {link.withLink && <Link href={link.To}>{link.Text}</Link>}
     </p>
     {link.To && !link.withLink && (
