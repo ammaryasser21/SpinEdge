@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import "../style/Navbar.css";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({className}) => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className={isScrolled ? "scrolled" : ""}>
+      <div className={`container ${className.className}`}>
       <div className="navBrand">
         <Link href="/">
           <svg
@@ -90,15 +91,11 @@ const Navbar = () => {
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
+
+    </div>
+      
     </nav>
   );
 };
 
 export default Navbar;
-
-// <ul>
-// <li><Link href="/" className={router.pathname === '/' ? 'active' : ''}>Home</Link></li>
-// <li><Link href="/about" className={router.pathname === '/about' ? 'active' : ''}>About</Link></li>
-// <li><Link href="/service" className={router.pathname === '/service' ? 'active' : ''}>Services</Link></li>
-// <li><Link href="/blog" className={router.pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
-// </ul>

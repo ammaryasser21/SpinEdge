@@ -6,17 +6,18 @@ import Image from "next/image";
 const CenterHero = ({
   showImages = true,
   button,
-  p1,
-  p2,
+  subtitle,
+  description,
   prefix,
   suffix,
   span,
   circle,
+  font
 }) => {
   return (
     <section className="aboutHero">
       <div className={`info center`}>
-        <p>{p1}</p>
+        <p>{subtitle}</p>
         <h1>
           {prefix}
           <span>
@@ -47,7 +48,7 @@ const CenterHero = ({
         )}
         </h1>
         
-        <p>{p2}</p>
+        <p className={font.className}>{description}</p>
 
         {button ? <CustomButton
           buttons={[

@@ -5,7 +5,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: 'Raleway', sans-serif;
 overflow-x: hidden;
 }
 :root{
@@ -20,10 +19,9 @@ overflow-x: hidden;
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
 }
-
-p {
-  font-family: 'Raleway', sans-serif;
-}
+/* p{
+  font-family: '__Space_Grotesk_587f35', sans-serif;
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -51,7 +49,7 @@ section:not(:first-child){
   margin:4rem 0;
 }
 .container{  
-  max-width: 1170px;
+  max-width: 81.25%;
   display: grid;
   place-items: center;
 }
@@ -63,7 +61,7 @@ section:first-child{
 @media (max-width: 768px) {
   .container{  
     padding-top: 5rem;
-    width: 100vw;
+    width: 100%;
     display: grid;
     place-items: center;
   }

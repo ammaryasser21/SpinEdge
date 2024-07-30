@@ -6,19 +6,22 @@ import CustomButton from "./CustomButton";
 import BlogCards from "./BlogCards";
 import CenterHero from "./CenterHero";
 import Image from "next/image";
+import { Space_Grotesk } from 'next/font/google'
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 const Blog = () => {
   return (
     <div className="blog-page">
       <CenterHero
         showImages={true}
-        p1="Our Blog"
-        p2="Welcome to ElevateSphere's blog, where we dive into the ever-evolving world of digital innovation."
+        subtitle="Our Blog"
+        description="Welcome to ElevateSphere's blog, where we dive into the ever-evolving world of digital innovation."
         prefix="Navigating the"
         suffix="Sphere"
         span="Digital"
         button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
         circle={{ Width: "267px", Height: "94px", Color: "#9BBA90" }}
+        font={spaceGrotesk}
       />
 
       <section className="blog-cards">
@@ -72,7 +75,7 @@ const Blog = () => {
 
       <section className="Blog-Home">
         <div className="top">
-          <Info p1="" p2="" h1="Latest Articles" />
+          <Info heading="Latest Articles" font={spaceGrotesk} />
           <CustomButton
             buttons={[
               { title: "All", classColor: "", to: "/", showArrow: false },
@@ -88,7 +91,7 @@ const Blog = () => {
             center={false}
           />
         </div>
-        <BlogCards />
+        <BlogCards font={spaceGrotesk} />
       </section>
 
       <ContactComp />

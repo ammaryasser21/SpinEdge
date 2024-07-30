@@ -1,28 +1,12 @@
 .info {
-    width: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
-.info .circle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.info .highlight img {
-    position: absolute;
-    top: 0;
-    right: -6%;
-    z-index: -1;
 }
 
 .info p:first-child::before {
     content: '';
-    width: 122px;
+    width: 112px;
     position: absolute;
     height: 2px;
     top: 50%;
@@ -39,43 +23,29 @@
 }
 
 .info h1 {
-    font-size: 4.4rem;
+    font-size: 72px;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
+    padding:32px 0;
 }
 
 .info h2 {
-    font-size: 3rem;
+    font-size: 64px;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.info h1 span {
- 
-        position: relative;
-        width: fit-content;
-        display: flex;
-        padding: 0 1.5rem;
+    padding: 32px 0;
 }
 
 .info p:first-child {
     position: relative;
-    padding-left: 8rem;
-    font-size: 27px;
+    padding-left: 124px;
+    font-size: 24px;
     font-weight: 500;
+    margin: 0;
 }
 
 .info p:not(:first-child) {
-    font-size: larger;
-    padding: 1rem 0;
-    padding-right: 2px;
-    color: var(--text-s-color);
+    font-size: 20px;
+
+    line-height:1.5;
 }
 
 @media (max-width: 1111px) {
@@ -87,10 +57,5 @@
 
 
 @media (max-width:400px) {
-    .info .circle {
-        position: absolute;
-        top: 0;
-        left: -37px;
-        z-index: -1;
-    }
+
 }

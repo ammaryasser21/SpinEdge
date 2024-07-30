@@ -1,29 +1,37 @@
 import React from 'react';
 import CustomButton from '../Components/CustomButton';
-import '../style/Info.css'
+import '../style/Info.css';
+
 const Info = ({
-  title,
-  classColor,
-  to,
+  buttonText,
+  buttonColor,
+  buttonLink,
   showArrow,
-  p1,
-  p2,
-  h2,
-  h1,
-  center
+  primaryText,
+  secondaryText,
+  subheading,
+  heading,
+  centerAlign,
+  font
 }) => {
   return (
-    <div className={`info ${center ? 'center' : ''}`}>
-      <p className={`${!p1 ? 'none' : ''}`}>{p1}</p>
-      {h2 ? <h2>{h2}</h2> : <h1>{h1}</h1>}
-      <p className={`${!p2 ? 'none' : ''}`}>{p2}</p>
-
-      {title && <CustomButton
-        buttons={[
-          { title: title , classColor: classColor , to: to , showArrow: { showArrow } }
-        ]}
-        center={center}
-      />}
+    <div className={`info ${centerAlign ? 'center' : ''}`}>
+      {primaryText && <p>{primaryText}</p>}
+      {subheading ? <h2>{subheading}</h2> : <h1>{heading}</h1>}
+      {secondaryText && <p className={font.className}>{secondaryText}</p>}
+      {buttonText && (
+        <CustomButton
+          buttons={[
+            {
+              title: buttonText,
+              classColor: buttonColor,
+              to: buttonLink,
+              showArrow
+            }
+          ]}
+          center={centerAlign}
+        />
+      )}
     </div>
   );
 };

@@ -1,43 +1,35 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../style/Contact.css";
 import CenterHero from "./CenterHero";
 import Info from "./Info";
 import CustomButton from "./CustomButton";
 import BlogCards from "./BlogCards";
 import ContactComp from "./ContactComp";
+import { Space_Grotesk } from "next/font/google";
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 const Contact = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   return (
     <div className="contact-page">
       <CenterHero
         showImages={true}
-        p1="Contact"
-        p2="Welcome to ElevateSphere's blog, where we dive into the ever-evolving world of digital innovation."
+        subtitle="Contact"
+        description="Welcome to ElevateSphere's blog, where we dive into the ever-evolving world of digital innovation."
         prefix=""
         suffix="with ElevateSphere"
         span="Get in Touch"
         circle={{ Width: "449px", Height: "88px", Color: "#B290BA" }}
+        font={spaceGrotesk}
       />
 
       <section className="get-quote">
         <div className="left">
           <Info
-            p1="Get a quote"
-            p2="Our team is available to assist you during our office hours. Feel free to drop by or schedule a meeting during the following hours."
-            h2="Send a message to get your free quote"
+            primaryText="Get a quote"
+            secondaryText="Our team is available to assist you during our office hours. Feel free to drop by or schedule a meeting during the following hours."
+            subheading="Send a message to get your free quote"
+            font={spaceGrotesk}
           />
           <div className="links-contact">
             <ul>
@@ -104,7 +96,7 @@ const Contact = () => {
               buttons={[
                 {
                   title: "Send Message",
-                  to:"",
+                  to: "",
                   showArrow: true,
                 },
               ]}
@@ -117,7 +109,7 @@ const Contact = () => {
       <section className="Blog-Home">
         <div className="top">
           <div className="top">
-            <Info p1="Blog" h2="Navigating the Digital " />
+            <Info primaryText="Blog" subheading="Navigating the Digital " font={spaceGrotesk} />
             <CustomButton
               buttons={[
                 {
@@ -130,7 +122,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <BlogCards />
+        <BlogCards font={spaceGrotesk} />
       </section>
       <ContactComp />
     </div>

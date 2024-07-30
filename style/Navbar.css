@@ -1,35 +1,51 @@
 /* Common nav styles */
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     position: fixed;
     top: 0;
     background-color: transparent;
-    padding: .5rem 2rem;
+    padding: 15px 0px;
     width: 100%;
-    transition: background-color 0.5s;
+    -o-transition: background-color 0.3s;
     z-index: 200;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    display: grid;
+    place-items: center;
 }
 nav.scrolled {
     background-color: white;
+}
+nav .navBrand{
+    width:33%;
+}
+nav .container{
+    width: 81.25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .navLinks ul {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     align-items: center;
+    padding:0;
+    width: 50%;
+    justify-content: center;
 }
 .navLinks {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 66%;
 }
 .navLinks a {
     color: var(--text-s-color);
     position: relative;
+    width: 50%;
 }
 .navLinks a.active {
     color: black;
@@ -66,7 +82,7 @@ nav.scrolled {
 .navContact a {
     color: white;
     background-color: var(--p-color);
-    padding: .7rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 28px;
     text-wrap: nowrap;
 }
@@ -99,14 +115,10 @@ nav.scrolled {
 }
 
 @media (max-width: 768px) {
+    nav .container{
+        padding: 0;
+    }
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 49%;
-        width: 100%;
-        padding: 1rem 2rem;
         background-color: white;
     }
     .navLinks {

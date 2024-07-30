@@ -1,67 +1,48 @@
-.Hero-Home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    flex-wrap: wrap;
-}
-
-section.Hero-Home{
-    padding-top: 0;
-}
-
-.Hero-Home h1 span img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
 .Home {
     display: grid;
     place-items: center;
 }
 
-.art {
+section.Hero-Home {padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
     position: relative;
-    right: 0;
-    z-index: 100;
-    top: -113px;
+    flex-wrap: wrap;
 }
 
-/* .art img {
-    height: 41rem;
-} */
-
-.info {
-    width: 58%;
+.Hero-Home .info {
     position: relative;
     display: flex;
     flex-direction: column;
+    flex:1 1 50%;
+    margin-top: 120px;
+    gap:0;
 }
 
-.info h1 span svg {
+.Hero-Home .info h1 span svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%) ;
+    -o-transform:translate(-50%,-50%) ;
     z-index: -1;
     -webkit-transform:translate(-50%,-50%) ;
     -moz-transform:translate(-50%,-50%) ;
     -ms-transform:translate(-50%,-50%) ;
-    -o-transform:translate(-50%,-50%) ;
+    transform:translate(-50%,-50%) ;
 }
 
-.info .highlight img {
+
+.Hero-Home .info .highlight img {
     position: absolute;
-    top: 0;
-    right: 34px;
+    top: 47px;
+    right: 11px;
 }
 
-.info p:first-child::before {
+.Hero-Home .info p:first-child::before {
     content: '';
-    width: 122px;
+    width: 112px;
     position: absolute;
     height: 2px;
     top: 50%;
@@ -70,43 +51,75 @@ section.Hero-Home{
     background-color: var(--p-color);
 }
 
-.info h1 {
-    font-size:4.4rem;
+.Hero-Home .info h1 {
+    width: 700px;
+    font-size:88px;
     margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    padding: 32px 0;
 }
 
-.info h2 {
-    font-size: 3rem;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.Hero-Home .info h1 span {
     position: relative;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: auto;
+    padding:0;
+    padding-right: 1rem;
 }
 
-.info h1 span {
+.Hero-Home .info p:first-child {
     position: relative;
-    width: fit-content;
-    padding-right: 21px;
-}
-
-.info p:first-child {
-    position: relative;
-    padding-left: 8rem;
-    font-size: 27px;
+    margin:0;
+    padding-left: 124px;
+    font-size: 24px;
     font-weight: 500;
+    
 }
 
-.info p:not(:first-child) {
-    font-size: larger;
-    padding: 1rem 0;
+.Hero-Home .info p:not(:first-child) {
+    font-size: 20px;
     padding-right: 2px;
+    padding-bottom: 40px;
     line-height: 1.5;
     color: var(--text-s-color);
+    margin: 0;
+}
+
+.Hero-Home .info .buttons 
+{
+    margin:0;
+}
+
+.Hero-Home .art {
+    position: relative;
+    right: 0;
+    z-index: 100;
+    top: -41px;
+    height: 698px;
+    background-color:#F0FDF7;
+    -o-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    border-radius: 35px;
+    overflow: hidden;
+    flex:1 1 291px;
+}
+.Hero-Home .art img{
+    position: absolute;
+}
+
+.Hero-Home .art img[alt="art1"]{
+    top: 0;
+    left: 0;
+}
+.Hero-Home .art img[alt="art2"]{
+    bottom:0;
+    right: 0;
 }
 
 
@@ -115,101 +128,94 @@ section.Hero-Home{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 100%;
     justify-content: center;
-    align-items: stretch;
-    margin-top: 7rem;
-    gap: 0rem;
+    align-items:stretch;
+    padding: 80px 0;
 }
 
-.AboutUs-Home .info {
+.AboutUs-Home .border:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    box-shadow: 50px 50px 0 0 #E8E8FF;
+}
+
+  .top_left{
     background-color: white;
-    border-radius: 33px;
-    width: auto;
-    border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
-    border-bottom-right-radius: 33px;
-    border-bottom-left-radius: 0;
-    padding: 1rem;
+    flex: 1 1 671px;
+    overflow: hidden;
+    position: relative;
+  }
+
+.AboutUs-Home .info p:not(:first-child) {
+    font-size: 20px;
+    color: var(--text-s-color);
+    margin: 0;
+    padding-bottom: 29px;
+    
 }
-
-.AboutUs-Home .left {
-    max-width: 45%;
-    background-color: #E8E8FF;
-
-    border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 33px;
-}
-
-.AboutUs-Home .right {
-    max-width: 45%;
-    background-color: #E8E8FF;
-    border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
-    border-bottom-right-radius: 33px;
-    border-bottom-left-radius: 0px;
-
-}
-
-
-.AboutUs-Home .info h1 {
-    font-size: 3rem;
-    text-wrap: balance;
-}
-
 
 .AboutUs-Home .img {
     display: grid;
     place-items: center;
-    padding: 1.5rem 0;
+    padding: 21px 0px;
+    padding-bottom: 0;
     background-color: #E8E8FF;
-    border-radius: 36px;
-    border-top-left-radius: 36px;
-    border-top-right-radius: 36px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0;
+    flex: 1 1 calc(467px - 32px);
 }
 
 .AboutUs-Home .card .img {
-    width: 50%;
-    display: grid;
+    padding: 0;
     place-items: center;
-    padding: 1.5rem 0;
     background-color: transparent;
-    border-radius: 36px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    flex: 1 1;
+    margin: 0;
 }
 
-.AboutUs-Home .img img {
-    width: 90%;
-}
-
-.AboutUs-Home .left .bottom {
-    padding: 1rem;
-    max-width: 100%;
+.AboutUs-Home .bottom_left {
+    padding:16px ;
+    padding-right:0;
     padding-bottom: 0;
     background-color: #E8E8FF;
     border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
+    border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 33px;
+    flex: 1 1 661px;
 }
 
-.AboutUs-Home .left .buttons {
+.AboutUs-Home .bottom_left .buttons {
     margin-top: 0;
     width: auto;
     display: flex;
     background-color: white;
-    padding: 13px 8px;
-    border-radius: 42px;
+    padding: 13px 0;
+    -o-border-radius: 30px;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 0rem;
     align-items: center;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
 }
 
-.AboutUs-Home .left .buttons a {
+.AboutUs-Home .bottom_left .buttons a {
     width: 40%;
     text-align: center;
     padding: 1rem;
@@ -218,13 +224,17 @@ section.Hero-Home{
     justify-content: center;
 }
 
-.AboutUs-Home .left p.last {
+.AboutUs-Home .bottom_left p {
     background-color: white;
-    padding: 2rem;
-    border-radius: 26px;
+    padding: 0 20px;
+    padding-top:14px;
+    padding-bottom:41px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom:18px;
     color: var(--text-ss-color);
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.5;
     text-wrap: pretty;
 }
 
@@ -232,13 +242,15 @@ section.Hero-Home{
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
-    padding: 1rem 0;
+    padding: 16px;
     background-color: #E8E8FF;
-    border-radius: 36px;
+    border-radius: 30px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 36px;
+    border-bottom-right-radius: 30px;
     border-bottom-left-radius: 0;
+    flex:1 1 calc(451px - 32px);
+    gap: 17px;
 }
 
 .AboutUs-Home .cards .card {
@@ -251,24 +263,30 @@ section.Hero-Home{
     text-align: center;
     text-wrap: balance;
     background-color: white;
-    padding: 6px 0px;
+    padding: 20px 18px;
     border-radius: 35px;
+    flex:1 1 209px;
+}
+
+.AboutUs-Home .cards .card {
+    padding-bottom:23px;
 }
 
 .AboutUs-Home .cards .card h2 {
-    font-size: 22px;
-    margin: 1px 0;
+    font-size: 24px;
+padding-bottom: 12px;
     color: var(--text-s-color);
     font-weight: 600;
+    margin: 0;
 }
 
 .AboutUs-Home .cards .card p {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-ss-color);
     margin: 0;
-    margin: 5px 28px;
+    font-weight:400;
     text-wrap: pretty;
-
+    line-height:1.5;
 }
 
 /* Services */
@@ -291,24 +309,20 @@ section.Hero-Home{
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
 }
 
 .Services-Home .cards .card {
-    width: 29%;
     display: flex;
     flex-direction: column;
-    gap: 27px;
-    padding: 1rem 1rem;
+    padding: 30px 20px;
     padding-bottom: 2rem;
     border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+
+    flex: 1 1 calc(270px - 120px);
 }
 
 .Services-Home .cards .card:nth-child(1) {
@@ -326,21 +340,24 @@ section.Hero-Home{
 
 }
 
-.Services-Home .cards .card img {
-    width: 40%;
+.Services-Home .cards .card .img {
+    padding-bottom:32px;
 }
 
 .Services-Home .cards .card h2 {
-    font-size: 36px;
+    font-size: 35px;
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
+    padding-bottom:14px;
 }
 
 .Services-Home .cards .card p {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-s-color);
     margin: 0;
     line-height: 1.5;
+    padding-right: 2px;
+    padding-bottom:28px;
 }
 .Services-Home .cards .card a {
     font-size: 16px;
@@ -392,17 +409,21 @@ section.Hero-Home{
 }
 
 .Blog-Home .top .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
-.Blog-Home .top .info h1 {
-    font-size: 4rem;
-    margin: 0;
+.Blog-Home .top .info h2 {
+    padding-bottom: 0;
 }
 
+.Blog-Home .top .buttons{
+    width:auto;
+    justify-content: flex-start;
+}
+
+.Blog-Home .top .buttons a{
+    padding:20px 44px;
+}
 
 .Blog-Home .cards {
     display: flex;
@@ -417,7 +438,7 @@ section.Hero-Home{
     flex-direction: column;
     align-items: center;
     border-radius: 50px;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem;flex-wrap:wrap;
 }
 
 .Blog-Home .cards .card:nth-child(1) .img {
@@ -450,10 +471,7 @@ section.Hero-Home{
     place-items: center;
     width: 100%;
     min-height: 300px;
-}
-
-.Blog-Home .cards .card img {
-    width: 50%;
+    margin-bottom: 32px;
 }
 
 .Blog-Home .cards .card .Type {
@@ -463,20 +481,31 @@ section.Hero-Home{
 }
 
 .Blog-Home .cards .card h2 {
-    color: var(--text-s-color);
+    color: black;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    font-size:22px;
+    text-wrap: wrap;
 }
 
 .Blog-Home .cards .card p {
     color: var(--text-ss-color);
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0;
+    font-size: 14px;
+    text-wrap: pretty;
+    padding-right: 1px;
 }
 
 .Blog-Home .cards .card p a {
     color: black;
-    font-weight: 600;
+    font-weight: 700;
     text-wrap: nowrap;
     cursor: pointer;
 }
+
 .Blog-Home .cards .card .Blog-p p:first-child {
     color: white;
     background-color: var(--p-color);
@@ -486,10 +515,12 @@ section.Hero-Home{
     border-radius: 24px;
     padding: 12px 22px;
     border: none;
+    margin: 0;
 }
 
 .Blog-Home .cards .card .Blog-p p:last-child {
     color: var(--text-s-color);
+    margin: 0;
 }
 
 @media (max-width: 1111px) {
@@ -586,8 +617,8 @@ section.Hero-Home{
         padding: 1.5rem 0;
         background-color: #E8E8FF;
         border-radius: 0;
-        border-top-left-radius: 36px;
-        border-top-right-radius: 36px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0;
     }
@@ -664,8 +695,8 @@ section.Hero-Home{
         border-radius: 0px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 36px;
-        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .AboutUs-Home .cards .card {
@@ -692,8 +723,8 @@ section.Hero-Home{
         border-radius: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 36px;
-        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
 
@@ -708,6 +739,101 @@ section.Hero-Home{
 }
 
 @media (max-width: 768px) {
+
+    .Hero-Home .info {
+        text-align: center;
+        width: 90%;
+        padding: 2rem;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+    
+    .Hero-Home .info img {
+        z-index: -1;
+    }
+    
+    .Hero-Home .info p {
+        width: auto;
+        position: relative;
+    }
+    
+    .Hero-Home .info p:first-child {
+        position: relative;
+        padding: 0rem 5rem;
+        font-size: 27px;
+        font-weight: 500;
+    }
+    
+    .Hero-Home .info p:first-child::before {
+        content: '';
+        width: 61px;
+        position: absolute;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        transform: translateY(50%);
+        background-color: var(--p-color);
+    }
+    
+    .Hero-Home .info p:first-child::after {
+        content: '';
+        width: 61px;
+        position: absolute;
+        height: 2px;
+        top: 50%;
+        right: 0;
+        transform: translateY(50%);
+        background-color: var(--p-color);
+    }
+    
+    .Hero-Home .info p:not(:first-child) {
+        font-size: 21px;
+        padding: 0;
+        padding-top: 2rem;
+        width: 80%;
+        line-height: 1.5;
+        margin: 0;
+        position: relative;
+        color: var(--text-s-color);
+    }
+    
+    .Hero-Home .info h1 {
+        font-size: 5rem;
+        margin: 0;
+        width: 79%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    .Hero-Home .info p:last-child {
+        position: relative;
+    }
+    
+    .Hero-Home .info h1 span {
+        position: relative;
+    }
+    
+    .Hero-Home .info h1 span svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .Hero-Home .info img[alt="Highlight"] {
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        transform: translateY(-50%);
+    }
 
     .Blog-Home .cards {
         display: flex;
@@ -761,8 +887,8 @@ section.Hero-Home{
         padding: 1.5rem 0;
         background-color: #E8E8FF;
         border-radius: 0;
-        border-top-left-radius: 36px;
-        border-top-right-radius: 36px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0;
     }
@@ -829,8 +955,8 @@ section.Hero-Home{
         border-radius: 0px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 36px;
-        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .AboutUs-Home .cards .card {
@@ -857,10 +983,10 @@ section.Hero-Home{
         text-align: center;
         text-wrap: balance;
         padding: 2rem 0rem;
-        border-top-left-radius: 36px;
-        border-top-right-radius: 36px;
-        border-bottom-right-radius: 36px;
-        border-bottom-left-radius: 36px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .AboutUs-Home .cards .card .img {
@@ -870,10 +996,10 @@ section.Hero-Home{
         padding: 1.5rem 0;
         background-color: #E8E8FF;
         border-radius: 0;
-        border-top-left-radius: 36px;
-        border-top-right-radius: 36px;
-        border-bottom-right-radius: 36px;
-        border-bottom-left-radius: 36px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .AboutUs-Home .cards .card:nth-child(1) .img {
@@ -885,8 +1011,8 @@ section.Hero-Home{
         border-radius: 0;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        border-bottom-right-radius: 36px;
-        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .AboutUs-Home .cards .card:nth-child(2) {
@@ -900,7 +1026,7 @@ section.Hero-Home{
         text-wrap: balance;
         background-color: white;
         padding: 0;
-        border-radius: 36px;
+        border-radius: 30px;
     }
 
     .AboutUs-Home .cards .card h2 {

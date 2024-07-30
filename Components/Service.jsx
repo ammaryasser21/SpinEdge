@@ -4,13 +4,15 @@ import ContactComp from "./ContactComp";
 import CustomButton from './CustomButton';
 import CenterHero from "./CenterHero";
 import Image from 'next/image';
+import { Space_Grotesk } from 'next/font/google'
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-const Card = ({ img, title, description }) => (
+const Card = ({ img, title, description,font }) => (
   <div className="card">
     <Image src={img.src} alt={title} width={110} height={110} />
     <Image src={img.curve} alt={`curve-${title}`}  width={1049} height={255} />
     <h1>{title}</h1>
-    <p>{description}</p>
+    <p className={font.className}>{description}</p>
     <CustomButton
       buttons={[
         { title: 'Learn More', classColor: 'none', to: '/contact', showArrow: true }
@@ -48,13 +50,14 @@ const Service = () => {
     <div className="AboutPage">
       <CenterHero
         showImages={true}
-        p1="Our Services"
-        p2="Welcome to ElevateSphere, where we bring together a fusion of creativity and technical mastery to empower your brand's digital journey."
+        subtitle="Our Services"
+        description="Welcome to ElevateSphere, where we bring together a fusion of creativity and technical mastery to empower your brand's digital journey."
         prefix="Our marketing"
         suffix=""
         span="services"
         button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
         circle={{ Width: "308px", Height: "88px", Color: "#9094BA" }}
+        font={spaceGrotesk}
       />
       <section className='service-cards'>
         {services.map((service) => (
@@ -63,6 +66,7 @@ const Service = () => {
             img={service.img}
             title={service.title}
             description={service.description}
+            font={spaceGrotesk}
           />
         ))}
       </section>

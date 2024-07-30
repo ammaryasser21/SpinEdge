@@ -5,7 +5,8 @@ import ContactComp from "./ContactComp.jsx";
 import Info from "./Info.jsx";
 import CenterHero from "./CenterHero.jsx";
 import Image from "next/image";
-
+import { Space_Grotesk } from 'next/font/google'
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 const Stats = () => (
   <section className="count">
     {[
@@ -15,21 +16,21 @@ const Stats = () => (
       { value: "250+", label: "Clients Worldwide" },
     ].map((stat) => (
       <div key={stat.label}>
-        <p>{stat.value}</p>
-        <p>{stat.label}</p>
+        <p className={spaceGrotesk.className}>{stat.value}</p>
+        <p className={spaceGrotesk.className}>{stat.label}</p>
       </div>
     ))}
   </section>
 );
 
-const Card = ({ img, title, description }) => (
+const Card = ({ img, title, description,font }) => (
   <div className="card">
     <div className="img">
       <Image src={img.Src} alt={title} width={img.Width} height={img.Height} />
     </div>
     <div className="card-content">
       <h2>{title}</h2>
-      <p>{description}</p>
+      <p className={font.className}>{description}</p>
     </div>
   </div>
 );
@@ -39,13 +40,14 @@ const About = () => {
     <div className="AboutPage">
       <CenterHero
         showImages={true}
-        p1="About The Team"
-        p2="At ElevateSphere, We are not just another digital marketing agency; we are your dedicated partner in transforming your digital vision into reality"
+        subtitle="About The Team"
+        description="At ElevateSphere, We are not just another digital marketing agency; we are your dedicated partner in transforming your digital vision into reality"
         prefix="Transforming"
         suffix="Visions into Reality"
         span="Digital"
         button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
         circle={{ Width: "275px", Height: "88px", Color: "#B7BA90" }}
+        font={spaceGrotesk}
       />
       <Stats />
       <section className="OurMission">
@@ -54,9 +56,10 @@ const About = () => {
           classColor="green"
           to="/contact"
           showArrow={true}
-          p1="Our Mission"
-          p2="At ElevateSphere, our mission is clear: to empower businesses to thrive in the digital landscape. We are dedicated to providing tailored, innovative solutions that propel our clients towards their goals."
-          h2="Empowering Your Digital Success"
+          primaryText="Our Mission"
+          secondaryText="At ElevateSphere, our mission is clear: to empower businesses to thrive in the digital landscape. We are dedicated to providing tailored, innovative solutions that propel our clients towards their goals."
+          subheading="Empowering Your Digital Success"
+          font={spaceGrotesk}
         />
         <div className="img">
           <Image
@@ -70,10 +73,11 @@ const About = () => {
       <section className="OurVision">
         <Info
           showArrow={true}
-          p1="Our Vision"
-          p2="Empowering businesses to effortlessly transform ideas into successful digital ventures."
-          h1="Why Choose ElevateSphere?"
+          primaryText="Our Vision"
+          secondaryText="Empowering businesses to effortlessly transform ideas into successful digital ventures."
+          heading="Why Choose ElevateSphere?"
           center={true}
+          font={spaceGrotesk}
         />
         <div className="cards">
           {[
@@ -125,11 +129,12 @@ const About = () => {
               title={card.title}
               description={card.description}
               img={card.img}
+              font={spaceGrotesk}
             />
           ))}
         </div>
       </section>
-      <ContactComp />
+      <ContactComp/>
     </div>
   );
 };
