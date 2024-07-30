@@ -35,17 +35,17 @@ const Contact = () => {
             <ul>
               <li>
                 <i className="fa fa-map" aria-hidden="true"></i>
-                <p>Old Port Mouseio, Mykonos, Greece</p>
+                <p className={spaceGrotesk.className}>Old Port Mouseio, Mykonos, Greece</p>
               </li>
               <li>
                 <i className="fa fa-clock" aria-hidden="true"></i>
-                <p>
+                <p className={spaceGrotesk.className}>
                   <span>Monday to Friday:</span> 9:00 AM to 5:00 PM
                 </p>
               </li>
               <li>
                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                <p>jessica.hanson@example.com</p>
+                <p className={spaceGrotesk.className}>jessica.hanson@example.com</p>
               </li>
             </ul>
           </div>
@@ -107,7 +107,6 @@ const Contact = () => {
       </section>
 
       <section className="Blog-Home">
-        <div className="top">
           <div className="top">
             <Info primaryText="Blog" subheading="Navigating the Digital " font={spaceGrotesk} />
             <CustomButton
@@ -121,7 +120,6 @@ const Contact = () => {
               ]}
             />
           </div>
-        </div>
         <BlogCards font={spaceGrotesk} />
       </section>
       <ContactComp />

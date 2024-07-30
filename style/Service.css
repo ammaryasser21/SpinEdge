@@ -10,15 +10,14 @@
 }
 .service-cards .card {
     width: 46%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
-    border-radius: 40px;
+    -o-border-radius: 40px;
     justify-content: space-evenly;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    border-radius: 40px;
     position: relative;
     padding: 2rem 1rem;
 }
@@ -80,13 +79,13 @@ background-color: #E6CCED;
     height: 70vh;
     display: flex;
     flex-direction: column;
-    border-radius: 40px;
+    -o-border-radius: 40px;
     justify-content: space-evenly;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     align-items: center;
     -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    border-radius: 40px;
     position: relative;
     overflow: hidden;
     text-align: center;

@@ -1,8 +1,7 @@
 .info.center {
     text-align: center;
     width: 90%;
-    padding: 2rem;
-    padding-top: 0;
+    padding: 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,14 +20,14 @@
 
 .info.center p:first-child {
     position: relative;
-    padding: 0rem 5rem;
-    font-size: 27px;
+    padding: 0rem 72px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 .info.center p:first-child::before {
     content: '';
-    width: 61px;
+    width: 60px;
     position: absolute;
     height: 2px;
     top: 50%;
@@ -49,9 +48,8 @@
 }
 
 .info.center p:not(:first-child) {
-    font-size: 21px;
+    font-size: 20px;
     padding: 0;
-    padding-top: 2rem;
     width: 80%;
     line-height: 1.5;
     margin: 0;
@@ -60,9 +58,7 @@
 }
 
 .info.center h1 {
-    font-size: 5rem;
-    margin: 0;
-    width: 79%;
+    font-size: 88px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,8 +116,6 @@
 
 
 @media (max-width: 768px) {
-
-
 
     .info.center {
         text-align: center;

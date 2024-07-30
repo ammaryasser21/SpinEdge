@@ -40,7 +40,8 @@
 }
 
 .contact-page .get-quote .left ul li span {
-  color: var(--text-s-color);
+  color: #000000;
+  font-weight: 500;
 }
 
 .contact-page form {
@@ -51,14 +52,21 @@
   gap: 20px;
   flex-wrap: wrap;
   padding: 2rem;
-  border-radius: 20px;
+  -o-border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 20px;
   align-items: center;
 }
 
+.contact-page .Blog-Home .top{
+  display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items:center;
+}
 .contact-page .links-contact {
   padding-left: 1rem;
 }
@@ -73,11 +81,11 @@ form div {
 form div input,
 textarea {
   padding: 1rem 1rem;
-  border-radius: 10px;
+  -o-border-radius: 10px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 10px;
   outline: none;
   caret-color: var(--text-ss-color);
   color: var(--text-ss-color);

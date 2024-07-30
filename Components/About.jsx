@@ -71,11 +71,12 @@ const About = () => {
         </div>
       </section>
       <section className="OurVision">
-        <Info
+        <CenterHero
+        showImages={false}
           showArrow={true}
-          primaryText="Our Vision"
-          secondaryText="Empowering businesses to effortlessly transform ideas into successful digital ventures."
-          heading="Why Choose ElevateSphere?"
+          subtitle="Our Vision"
+          description="Empowering businesses to effortlessly transform ideas into successful digital ventures."
+          prefix="Why Choose ElevateSphere?"
           center={true}
           font={spaceGrotesk}
         />
