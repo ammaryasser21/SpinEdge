@@ -51,7 +51,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form action="submit">
+        <form className={spaceGrotesk.className} action="submit">
           {[
             {
               label: "Name",

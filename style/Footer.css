@@ -30,11 +30,11 @@ footer .end{
     padding-top: 2rem;
 
 }
-footer .top .info{
+footer .top .info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
+    width: 369px;
 }
 
 footer .top .info p{
@@ -62,7 +62,7 @@ footer .top .navBrand a span {
     font-weight: 300;
 }
 footer .top .info p{
-    font-size: 19px;
+    font-size: 14px;
 }
 
 footer .social-links{
@@ -86,6 +86,13 @@ footer .links .link{
     flex-direction: column;
     gap: 1rem;
 }
+footer .links .link:first-child{
+padding-right: 141px;
+}
+footer .links .link:nth-child(2){
+    padding-right: 60px;
+    }
+
 
 footer .links .link h2{
 font-size: 24px;
@@ -108,13 +115,22 @@ footer .links .link ul li a{
     color: #DCDCDC;
 }
 
-footer .links .link:last-child ul li{
+footer .links .link ul:last-child li {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    gap: 1rem;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    width: 309;
 }
 
+footer .links .link ul:nth-child(1) li {
+    padding-bottom: 8px;
+}
+
+footer .links .link ul:nth-child(2) li {
+    padding-bottom: 10px;
+}
 footer .links .link:last-child ul li p{
 margin: 0;
 }

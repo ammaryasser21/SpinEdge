@@ -353,11 +353,12 @@ padding-bottom: 12px;
 
 .Services-Home .cards .card p {
     font-size: 14px;
-    color: var(--text-s-color);
+    color: black;
     margin: 0;
     line-height: 1.5;
-    padding-right: 2px;
-    padding-bottom:28px;
+    text-wrap: wrap;
+    padding-right: 0px;
+    padding-bottom: 28px;
 }
 .Services-Home .cards .card a {
     font-size: 16px;
@@ -490,9 +491,9 @@ padding-bottom: 12px;
 }
 
 .Blog-Home .cards .card p {
-    color: var(--text-ss-color);
+    color: #606060;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
     font-size: 14px;
     text-wrap: pretty;
