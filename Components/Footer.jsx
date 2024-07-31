@@ -1,9 +1,7 @@
 import React from "react";
 import "../style/Footer.css";
 import Link from "next/link";
-import { Space_Grotesk } from "next/font/google";
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
-const Footer = ({className}) => {
+const Footer = ({ className }) => {
   return (
     <footer className={className.className}>
       <div className="container">

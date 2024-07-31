@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-const Card = ({ img, title, description, link ,font}) => (
+const Card = ({ img, title, description, link, font }) => (
   <div className="card">
     <div className="img">
       <Image

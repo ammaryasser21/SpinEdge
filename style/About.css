@@ -1,199 +1,39 @@
-/* General Layout */
-.AboutPage {
-    display: grid;
-    place-items: center;
+.AboutPage{display:grid;place-items:center}
+.count{width:100%;display:flex;flex-wrap:wrap;gap:16px;justify-content:center;align-items:center}
+.count div{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border-radius:10px;width:270px;padding:52px 0}
+.count div:nth-child(1){background-color:#ccdded}
+.count div:nth-child(2){background-color:#cceded}
+.count div:nth-child(3){background-color:#edcccc}
+.count div:nth-child(4){background-color:#ddedcc}
+.count div p:nth-child(1){font-size:52px;margin:0;font-weight:500}
+.count div p:nth-child(2){font-size:20px;font-weight:500;margin:0}
+.OurMission{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:2rem;margin:2rem 0}
+.OurMission .img{width:42%;display:grid;place-items:center}
+.OurMission .info{flex:1 1}
+.OurMission .img img{width:90%}
+.OurVision .cards{padding:2rem 0;display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.OurVision .card{width:40%;display:flex;gap:22px;flex-direction:row;padding:1.5rem 2rem;border-radius:34px}
+.OurVision .card:nth-child(1){background-color:#d1cced}
+.OurVision .card:nth-child(2){background-color:#edccde}
+.OurVision .card:nth-child(3){background-color:#cceded}
+.OurVision .card:nth-child(4){background-color:#cdedcc}
+.OurVision .card .img{background-color:#fff;display:grid;place-items:center;border-radius:21px;padding:0 1rem}
+.OurVision .card .card-content{display:flex;flex-direction:column;justify-content:center;width:80%}
+.OurVision .card .card-content h2{font-size:36px;margin:0;font-weight:500}
+.OurVision .card .card-content p{color:var(--text-ss-color);line-height:1.5}
+@media (max-width:1111px){
+.count div{width:49%}
+.OurMission .img{width:50%}
+.count{width:90%;justify-content:flex-start}
 }
-
-.count {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-}
-
-.count div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-width: 270px;
-    padding: 52px 0;
-}
-
-.count div:nth-child(1) {
-    background-color: #CCDDED;
-}
-
-.count div:nth-child(2) {
-    background-color: #CCEDED;
-}
-
-.count div:nth-child(3) {
-    background-color: #EDCCCC;
-}
-
-.count div:nth-child(4) {
-    background-color: #DDEDCC;
-}
-
-.count div p:nth-child(1) {
-    font-size: 52px;
-    margin: 0;
-    font-weight: 500;
-}
-
-.count div p:nth-child(2) {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-}
-
-/* Our Mission */
-.OurMission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.OurMission .img {
-    width: 42%;
-    display: grid;
-    place-items: center;
-}
-.OurMission .info{
-    flex:1 1;
-}
-
-.OurMission .img img {
-    width: 90%;
-}
-
-/* Our Vision */
-.OurVision .cards {
-    padding: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.OurVision .card {
-    width: 40%;
-    display: flex;
-    gap: 22px;
-    flex-direction: row;
-    padding: 1.5rem 2rem;
-    border-radius: 34px;
-}
-
-.OurVision .card:nth-child(1) {
-    background-color: #D1CCED;
-}
-
-.OurVision .card:nth-child(2) {
-    background-color: #EDCCDE;
-}
-
-.OurVision .card:nth-child(3) {
-    background-color: #CCEDED;
-}
-
-.OurVision .card:nth-child(4) {
-    background-color: #CDEDCC;
-}
-
-.OurVision .card .img {
-    background-color: white;
-    display: grid;
-    place-items: center;
-    border-radius: 21px;
-    padding: 0 1rem;
-}
-
-
-.OurVision .card .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-}
-
-.OurVision .card .card-content h2 {
-    font-size: 36px;
-    margin: 0;
-    font-weight: 500;
-}
-
-.OurVision .card .card-content p {
-    color: var(--text-ss-color);
-    line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 1111px) {
-    .count div {
-        width: 49%;
-    }
-
-    .OurMission .img {
-        width: 50%;
-    }
-
-    .count {
-        width: 90%;
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 768px) {
-    .count {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .count div {
-        width: 88%;
-    }
-
-    .OurMission {
-        flex-direction: column;
-    }
-
-    .OurMission .img {
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    .OurMission .img img {
-        width: 77%;
-    }
-
-    .OurVision .card {
-        width: 67%;
-        flex-direction: column;
-    }
-
-    .OurVision .card .img {
-        padding: 3rem 0;
-    }
-
-    .OurVision .card .img img {
-        width: 24%;
-    }
-
-    .OurVision .card .card-content {
-        width: 100%;
-        text-align: center;
-    }
-}
-section {
-    display: grid;
-    place-items: center;
+@media (max-width:768px){
+.count{flex-direction:column;gap:30px}
+.count div{width:88%}
+.OurMission{flex-direction:column}
+.OurMission .img{width:100%;padding:1rem 0}
+.OurMission .img img{width:77%}
+.OurVision .card{width:67%;flex-direction:column}
+.OurVision .card .img{padding:3rem 0}
+.OurVision .card .img img{width:24%}
+.OurVision .card .card-content{width:100%;text-align:center}
 }

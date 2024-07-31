@@ -5,7 +5,7 @@ import ContactComp from "./ContactComp.jsx";
 import Info from "./Info.jsx";
 import CenterHero from "./CenterHero.jsx";
 import Image from "next/image";
-import { Space_Grotesk } from 'next/font/google'
+import { Space_Grotesk } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 const Stats = () => (
   <section className="count">
@@ -23,7 +23,7 @@ const Stats = () => (
   </section>
 );
 
-const Card = ({ img, title, description,font }) => (
+const Card = ({ img, title, description, font }) => (
   <div className="card">
     <div className="img">
       <Image src={img.Src} alt={title} width={img.Width} height={img.Height} />
@@ -72,7 +72,7 @@ const About = () => {
       </section>
       <section className="OurVision">
         <CenterHero
-        showImages={false}
+          showImages={false}
           showArrow={true}
           subtitle="Our Vision"
           description="Empowering businesses to effortlessly transform ideas into successful digital ventures."
@@ -135,7 +135,7 @@ const About = () => {
           ))}
         </div>
       </section>
-      <ContactComp/>
+      <ContactComp />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const CenterHero = ({
   suffix,
   span,
   circle,
-  font
+  font,
 }) => {
   return (
     <section className="aboutHero">
@@ -39,32 +39,38 @@ const CenterHero = ({
           </span>
           {suffix}
           {showImages && (
-          <Image
-            src="/images/highlight.svg"
-            alt="Highlight"
-            width={100}
-            height={100}
-          />
-        )}
+            <Image
+              src="/images/highlight.svg"
+              alt="Highlight"
+              width={100}
+              height={100}
+            />
+          )}
         </h1>
-        
+
         <p className={font.className}>{description}</p>
 
-        {button ? <CustomButton
-          buttons={[
-            {
-              title: button.Text,
-              classColor: "",
-              to: button.Link,
-              showArrow: button.showArrow,
-            },
-          ]}
-          center={true}
-        /> : null}
+        {button ? (
+          <CustomButton
+            buttons={[
+              {
+                title: button.Text,
+                classColor: "",
+                to: button.Link,
+                showArrow: button.showArrow,
+              },
+            ]}
+            center={true}
+          />
+        ) : null}
 
-       
         {showImages && (
-          <Image src="/images/hero3.png" alt="hero3" width={50.01} height={27.85} />
+          <Image
+            src="/images/hero3.png"
+            alt="hero3"
+            width={50.01}
+            height={27.85}
+          />
         )}
         {showImages && (
           <Image src="/images/hero2.png" alt="hero2" width={38} height={38} />

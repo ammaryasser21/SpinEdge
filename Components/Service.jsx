@@ -1,21 +1,26 @@
-import React from 'react';
-import '../style/Service.css';
+import React from "react";
+import "../style/Service.css";
 import ContactComp from "./ContactComp";
-import CustomButton from './CustomButton';
+import CustomButton from "./CustomButton";
 import CenterHero from "./CenterHero";
-import Image from 'next/image';
-import { Space_Grotesk } from 'next/font/google'
+import Image from "next/image";
+import { Space_Grotesk } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-const Card = ({ img, title, description,font }) => (
+const Card = ({ img, title, description, font }) => (
   <div className="card">
     <Image src={img.src} alt={title} width={110} height={110} />
-    <Image src={img.curve} alt={`curve-${title}`}  width={1049} height={255} />
+    <Image src={img.curve} alt={`curve-${title}`} width={1049} height={255} />
     <h1>{title}</h1>
     <p className={font.className}>{description}</p>
     <CustomButton
       buttons={[
-        { title: 'Learn More', classColor: 'none', to: '/contact', showArrow: true }
+        {
+          title: "Learn More",
+          classColor: "none",
+          to: "/contact",
+          showArrow: true,
+        },
       ]}
       center={false}
     />
@@ -25,24 +30,40 @@ const Card = ({ img, title, description,font }) => (
 const Service = () => {
   const services = [
     {
-      img:{src:"/images/serviceImg1.png",curve: "/images/servicePage1.png"},
-      title: 'Web Development',
-      description: 'From cutting-edge web development to bespoke app solutions, our development team crafts robust, scalable, and tailored digital solutions that resonate with your business objectives.',
+      img: {
+        src: "/images/serviceImg1.png",
+        curve: "/images/servicePage1.png",
+      },
+      title: "Web Development",
+      description:
+        "From cutting-edge web development to bespoke app solutions, our development team crafts robust, scalable, and tailored digital solutions that resonate with your business objectives.",
     },
     {
-      img:{src:"/images/serviceImg2.png",curve: "/images/servicePage2.png"},
-      title: 'UI/UX Design',
-      description: 'Elevate user experiences with designs that seamlessly blend aesthetic appeal and functional efficiency, fostering engagement and brand loyalty.',
+      img: {
+        src: "/images/serviceImg2.png",
+        curve: "/images/servicePage2.png",
+      },
+      title: "UI/UX Design",
+      description:
+        "Elevate user experiences with designs that seamlessly blend aesthetic appeal and functional efficiency, fostering engagement and brand loyalty.",
     },
     {
-      img:{src:"/images/serviceImg3.png",curve: "/images/servicePage3.png"},
-      title: 'Brand Identity',
-      description: 'Crafting identities that stand out in a crowded digital space, our branding solutions speak volumes and leave a lasting impact on your audience, ensuring your brand is unforgettable.',
+      img: {
+        src: "/images/serviceImg3.png",
+        curve: "/images/servicePage3.png",
+      },
+      title: "Brand Identity",
+      description:
+        "Crafting identities that stand out in a crowded digital space, our branding solutions speak volumes and leave a lasting impact on your audience, ensuring your brand is unforgettable.",
     },
     {
-      img:{src:"/images/serviceImg4.png",curve: "/images/servicePage4.png"},
-      title: 'Digital Marketing',
-      description: 'Our marketing strategies are designed to drive engagement, leveraging the latest trends and insights to position your brand at the forefront of the digital landscape.',
+      img: {
+        src: "/images/serviceImg4.png",
+        curve: "/images/servicePage4.png",
+      },
+      title: "Digital Marketing",
+      description:
+        "Our marketing strategies are designed to drive engagement, leveraging the latest trends and insights to position your brand at the forefront of the digital landscape.",
     },
   ];
 
@@ -59,7 +80,7 @@ const Service = () => {
         circle={{ Width: "308px", Height: "88px", Color: "#9094BA" }}
         font={spaceGrotesk}
       />
-      <section className='service-cards'>
+      <section className="service-cards">
         {services.map((service) => (
           <Card
             key={service.title}
