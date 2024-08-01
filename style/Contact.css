@@ -1,3 +1,4 @@
+.contact-page .aboutHero .info.center .buttons{display:none}
 .contact-page .get-quote{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;border-radius:10px}
 .contact-page{display:grid;place-items:center}
 .contact-page .get-quote .left{display:flex;flex-direction:column;flex:1 1 538px}
@@ -9,7 +10,7 @@
 .contact-page form{background-color:#e0f7fa;display:flex;flex-direction:row;gap:20px;flex-wrap:wrap;padding:20px;padding-bottom:60px;-o-border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;border-radius:30px;align-items:center;flex:1 1 calc(530px - 40px)}
 .contact-page .Blog-Home .top{display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;align-items:center}
 form div{display:flex;flex-direction:column;gap:10px;flex:1 1 calc(50% - 10px)}
-form div input,textarea{padding:1rem 1rem;border-radius:100px;outline:0;caret-color:var(--text-ss-color);color:var(--text-ss-color);border-color:transparent}
+form div input,textarea{padding:12px;border-radius:100px;outline:0;caret-color:var(--text-ss-color);color:var(--text-ss-color);border-color:transparent}
 textarea{border-radius:12px}
 form div input::placeholder,textarea::placeholder{color:#b5b5b5;font-family:'__Space_Grotesk_587f35','__Space_Grotesk_Fallback_587f35';font-style:normal}
 form div label{display:flex;flex-direction:row;align-items:baseline;gap:5px;color:var(--text-s-color);font-weight:700;padding-top:8px;font-size:16px}
@@ -19,8 +20,14 @@ form textarea{display:flex;flex-direction:column;height:9rem}
 @media (max-width:768px){
 .contact-page .get-quote{justify-content:center;gap:20px;border-radius:10px}
 .contact-page form{width:76%}
-.contact-page .get-quote .left{width:100%;}
+.contact-page .get-quote .left{width:100%}
 }
 @media (max-width:400px){
-form div{width:100%}
+form div{width:46%;flex:1 1 auto}
+.contact-page .aboutHero .info.center .buttons{display:flex}
+.contact-page .get-quote{justify-content:center;gap:40px;border-radius:10px;padding:24px}
+.contact-page .get-quote .left ul li p{font-size:14px}
+.contact-page .Blog-Home .buttons{display:none}
+form .buttons{justify-content:flex-start;padding-top:20px;gap:7px;margin:0}
+form div input::placeholder,textarea::placeholder{font-size:12px}
 }

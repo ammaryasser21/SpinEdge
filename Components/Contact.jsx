@@ -20,14 +20,14 @@ const FormInput = ({ label, type, placeholder, id }) => {
   );
 };
 
-const ContactInfo = ({ items, fontClass }) => {
+const ContactInfo = ({ items, fontClass}) => {
   return (
     <div className="links-contact">
       <ul>
-        {items.map(({ icon, text }, index) => (
-          <li key={index}>
+        {items.map(({ icon, text,boldText }) => (
+          <li key={text}>
             <i className={icon} aria-hidden="true"></i>
-            <p className={fontClass}>{text}</p>
+            <p className={fontClass}>{boldText && <span>{boldText}</span>}{text}</p>
           </li>
         ))}
       </ul>
@@ -52,7 +52,7 @@ const Contact = () => {
     {
       label: "Company",
       type: "text",
-      placeholder: "b*************.com",
+      placeholder: "b************.com",
       id: "Company",
     },
     {
@@ -64,9 +64,9 @@ const Contact = () => {
   ];
 
   const contactItems = [
-    { icon: "fa fa-map", text: "Old Port Mouseio, Mykonos, Greece" },
-    { icon: "fa fa-clock", text: "Monday to Friday: 9:00 AM to 5:00 PM" },
-    { icon: "fa fa-envelope", text: "jessica.hanson@example.com" },
+    { icon: "fa fa-map", text: "Old Port Mouseio, Mykonos, Greece",boldText:"" },
+    { icon: "fa fa-clock", text: "9:00 AM to 5:00 PM",boldText:"Monday to Friday: " },
+    { icon: "fa fa-envelope", text: "jessica.hanson@example.com",boldText:"" },
   ];
 
   return (
@@ -79,6 +79,7 @@ const Contact = () => {
         suffix="with ElevateSphere"
         span="Get in Touch"
         circle={{ Width: "449px", Height: "88px", Color: "#B290BA" }}
+        button={{ Text: "Contact Us", Link: "/contact", showArrow: true }}
         font={spaceGrotesk}
       />
 
@@ -125,7 +126,7 @@ const Contact = () => {
         <div className="top">
           <Info
             primaryText="Blog"
-            subheading="Navigating the Digital "
+            subheading="Navigating the Digital Sphere"
             font={spaceGrotesk}
           />
           <CustomButton
