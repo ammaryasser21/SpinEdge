@@ -20,7 +20,7 @@
 .info.center img[alt=Highlight]{width:70px;top:-21px}
 }
 @media (max-width:400px){
-.info.center h1{font-size:48px}
+.info.center h1{font-size:48px;padding:32px 0}
 .info.center p:first-child{padding:0rem 42px;font-size:14px}
 .info.center p:first-child::after,.info.center p:first-child::before{width:30px}
 .info.center p:not(:first-child){font-size:14px;width:auto}

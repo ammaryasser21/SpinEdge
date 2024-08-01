@@ -76,7 +76,7 @@ const Service = () => {
         prefix="Our marketing"
         suffix=""
         span="services"
-        button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
+        button={{ Text: "Contact Us", Link: "/contact", showArrow: true }}
         circle={{ Width: "308px", Height: "88px", Color: "#9094BA" }}
         font={spaceGrotesk}
       />
