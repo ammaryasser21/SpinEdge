@@ -29,9 +29,9 @@
 @media (max-width:768px){
 .count{flex-direction:column;gap:30px}
 .count div{width:88%}
-.OurMission{flex-direction:column}
+.OurMission{flex-direction:column;padding:0 24px}
 .OurMission .img{width:100%;padding:1rem 0}
-.OurMission .img img{width:77%}
+.OurMission .img img{width:100%;height:433px}
 .OurVision .card{width:67%;flex-direction:column}
 .OurVision .card .img{padding:3rem 0}
 .OurVision .card .img img{width:24%}

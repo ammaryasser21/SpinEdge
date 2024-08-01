@@ -9,6 +9,7 @@
 @media (max-width:700px){
 .info p:first-child{padding-left:42px;font-size:14px}
 .info p:first-child::before{width:30px}
+.info p:not(:first-child){font-size:14px}
 .info h2{font-size:36px}
 .AboutUs-Home .info p:not(:first-child){font-size:14px;padding-bottom:40px}
 .info h1{font-size:36px}

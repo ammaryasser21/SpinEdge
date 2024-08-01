@@ -21,11 +21,11 @@ nav .navBrand{width:33%}
 .burger.open .line2{opacity:0}
 .burger.open .line3{transform:rotate(-45deg) translate(5px,-5px)}
 @media (max-width:768px){
-nav .container{padding:0}
+nav .container{padding:0; width: 81.25%;}
 nav{background-color:#fff}
 nav .navBrand{width:auto}
 .navLinks{position:absolute;top:-40rem;right:0;left:0;background-color:#fff;flex-direction:column;width:100%;align-items:center;text-align:center;height:70vh;transition:all .5s;justify-content:space-evenly}
-.navLinks.open{display:flex;top:66px;transition:all .5s;justify-content:space-evenly}
+.navLinks.open{display:flex;top:63px;transition:all .5s;justify-content:space-evenly}
 .navLinks ul{flex-direction:column;gap:3rem;align-items:center;justify-content:center;padding:0}
 .burger{display:flex}
 .black-svg{display:flex}

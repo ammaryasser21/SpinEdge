@@ -23,6 +23,7 @@ footer .links .link ul:nth-child(2) li{padding-bottom:10px}
 footer .links .link:last-child ul li p{margin:0}
 @media (max-width:768px){
 footer{padding:2rem;color:#fff;background-color:#000;display:grid;place-items:center;overflow:hidden;width:calc(100% - 4rem)}
+footer .container{width:81.25%;}
 footer .top{flex-direction:column;align-items:center}
 footer .top .info .navBrand a h1{text-wrap:nowrap}
 footer .top .info{justify-content:center;align-items:center;width:100%}
