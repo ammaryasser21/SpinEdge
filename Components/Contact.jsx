@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import "../style/Contact.css";
+import "../style/BlogHome.css"
 import CenterHero from "./CenterHero";
 import Info from "./Info";
 import CustomButton from "./CustomButton";
-import BlogCards from "./BlogCards";
 import ContactComp from "./ContactComp";
 import { Space_Grotesk } from "next/font/google";
+import BlogSection from "./BlogSection";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 const FormInput = ({ label, type, placeholder, id }) => {
@@ -122,26 +123,19 @@ const Contact = () => {
         </form>
       </section>
 
-      <section className="Blog-Home">
-        <div className="top">
-          <Info
-            primaryText="Blog"
-            subheading="Navigating the Digital Sphere"
-            font={spaceGrotesk}
-          />
-          <CustomButton
-            buttons={[
-              {
-                title: "See All",
-                classColor: "",
-                to: "/service",
-                showArrow: false,
-              },
-            ]}
-          />
-        </div>
-        <BlogCards font={spaceGrotesk} />
-      </section>
+      <BlogSection
+        primaryText="Blog"
+        subheading="Navigating the Digital Sphere"
+        buttons={[
+          {
+            title: "See All",
+            classColor: "",
+            to: "/service",
+            showArrow: false,
+          },
+        ]}
+        blogCardsFont={spaceGrotesk.className}
+      />
       <ContactComp />
     </div>
   );

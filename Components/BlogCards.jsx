@@ -60,9 +60,9 @@ const BlogCards = ({ font }) => {
 
   return (
     <div className="cards">
-      {blogData.map((blog, index) => (
+      {blogData.map((blog) => (
         <BlogCard
-          key={index}
+          key={blog.title}
           imageSrc={blog.imageSrc}
           altText={blog.altText}
           category={blog.category}

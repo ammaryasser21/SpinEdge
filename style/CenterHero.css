@@ -6,7 +6,7 @@
 .info.center p:first-child::before{left:0}
 .info.center p:first-child::after{right:0}
 .info.center p:not(:first-child){font-size:20px;padding:0;width:80%;line-height:1.5;margin:0;color:var(--text-s-color)}
-.info.center h1{font-size:88px;display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;position:relative}
+.info.center h1{font-size:88px;display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;position:relative;width:87%}
 .info.center h1 span{position:relative;padding:0 1rem}
 .info.center h1 span svg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:-1}
 .info.center img[alt=Highlight]{position:absolute;top:50%;right:-10%;transform:translateY(-50%)}

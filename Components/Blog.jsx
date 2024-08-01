@@ -1,12 +1,11 @@
 import React from "react";
 import "../style/Blog.css";
+import "../style/BlogHome.css"
 import ContactComp from "./ContactComp";
-import Info from "./Info";
-import CustomButton from "./CustomButton";
-import BlogCards from "./BlogCards";
 import CenterHero from "./CenterHero";
 import Image from "next/image";
 import { Space_Grotesk } from "next/font/google";
+import BlogSection from "./BlogSection";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 const BlogCard = ({ imgSrc, imgAlt, category, date, title, description }) => {
@@ -61,27 +60,17 @@ const Blog = () => {
         />
       </section>
 
-      <section className="Blog-Home">
-        <div className="top">
-          <Info heading="Latest Articles" font={spaceGrotesk} />
-          <CustomButton
-            buttons={[
-              { title: "All", classColor: "", to: "/", showArrow: false },
-              { title: "Growth", classColor: "", to: "/", showArrow: false },
-              { title: "Marketing", classColor: "", to: "/", showArrow: false },
-              {
-                title: "Social Media",
-                classColor: "",
-                to: "/",
-                showArrow: false,
-              },
-            ]}
-            center={false}
-            font={spaceGrotesk.className}
-          />
-        </div>
-        <BlogCards font={spaceGrotesk} />
-      </section>
+      <BlogSection
+        subheading="Latest Articles"
+        buttons={[
+          { title: "All", classColor: "", to: "/", showArrow: false },
+          { title: "Growth", classColor: "", to: "/", showArrow: false },
+          { title: "Marketing", classColor: "", to: "/", showArrow: false },
+          { title: "Social Media", classColor: "", to: "/", showArrow: false },
+        ]}
+        blogCardsFont={spaceGrotesk.className}
+        customButtonProps={{ center: false }}
+      />
       <ContactComp />
     </div>
   );

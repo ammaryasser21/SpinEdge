@@ -7,7 +7,7 @@
 .contact-page .get-quote .left ul li p{margin:0;padding-bottom:20px;font-size:20px}
 .contact-page .get-quote .left ul li:nth-child(1) p{margin:0;padding-top:40px}
 .contact-page .get-quote .left ul li span{color:#000;font-weight:500}
-.contact-page form{background-color:#e0f7fa;display:flex;flex-direction:row;gap:20px;flex-wrap:wrap;padding:20px;padding-bottom:60px;-o-border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;border-radius:30px;align-items:center;flex:1 1 calc(530px - 40px)}
+.contact-page form{background-color:#e0f7fa;display:flex;flex-direction:row;gap:20px;flex-wrap:wrap;padding:20px;padding-bottom:60px;-o-border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;border-radius:30px;align-items:center;flex:1 1 calc(468px - 40px)}
 .contact-page .Blog-Home .top{display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;align-items:center}
 form div{display:flex;flex-direction:column;gap:10px;flex:1 1 calc(50% - 10px)}
 form div input,textarea{padding:12px;border-radius:100px;outline:0;caret-color:var(--text-ss-color);color:var(--text-ss-color);border-color:transparent}
