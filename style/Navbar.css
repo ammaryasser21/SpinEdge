@@ -1,6 +1,6 @@
 nav{position:fixed;top:0;background-color:transparent;padding:15px 0;width:100%;-o-transition:background-color .3s;z-index:200;-webkit-transition:background-color .3s;-moz-transition:background-color .3s;-ms-transition:background-color .3s;transition:background-color .3s;display:grid;place-items:center}
 nav.scrolled{background-color:#fff}
-nav .container{width:81.25%;display:flex;flex-direction:row;justify-content:space-between;align-items:center}
+nav .container{width:1170px;display:flex;flex-direction:row;justify-content:space-between;align-items:center}
 nav .navBrand{width:33%}
 .navBrand a{display:flex;flex-direction:row;align-items:center;gap:5px}
 .navBrand span{font-weight:300}
