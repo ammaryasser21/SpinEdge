@@ -77,6 +77,7 @@ const Blog = () => {
               },
             ]}
             center={false}
+            font={spaceGrotesk.className}
           />
         </div>
         <BlogCards font={spaceGrotesk} />

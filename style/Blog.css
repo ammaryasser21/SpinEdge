@@ -4,7 +4,6 @@
 .blog-cards .card:nth-child(1){background-color:#e2edcc}
 .blog-cards .card:nth-child(2){background-color:#edcccc}
 .blog-cards .card .img{width:100%;display:grid;place-items:center;padding:2rem 0;-o-border-radius:18px;-webkit-border-radius:18px;-moz-border-radius:18px;-ms-border-radius:18px;border-radius:18px;background-color:#fff}
-.blog-cards .card .img img{width:40%}
 .blog-cards .card .content-card{display:flex;flex-direction:column;gap:5px}
 .blog-cards .card .content-card .first{display:flex;flex-direction:row;gap:10px;align-items:center}
 .blog-cards .card p{font-family:'__Space_Grotesk_587f35','__Space_Grotesk_Fallback_587f35';font-style:normal}
@@ -14,8 +13,10 @@
 .blog-cards .card .content-card p{color:var(--text-ss-color);line-height:1.5}
 .Blog-Home .top .buttons{width:auto;margin:1rem;display:flex;flex-direction:row;gap:1rem;justify-content:flex-start;align-items:center;text-wrap:nowrap;flex-wrap:wrap}
 @media (max-width:768px){
-.blog-cards{flex-wrap:wrap;gap:20px;align-items:center;justify-content:center}
-.blog-cards .card{width:87%;text-align:center;align-items:center;gap:1rem}
+.blog-cards{gap:30px;padding:0 24px}
+.blog-cards .card{width:100%;text-align:center;align-items:center;gap:30px;padding:20px;padding-bottom:60px}
+.blog-cards .card .img{width:calc(100% - 106px);padding:53px;border-radius:18px;background-color:#fff}
 .blog-cards .card .content-card .first{display:flex;flex-direction:row;gap:29px;align-items:center;justify-content:center}
-.Blog-Home .top{justify-content:center;align-items:center}
+.blog-cards .card .content-card h1{font-size:36px;font-weight:600;padding-top:20px;padding-bottom:14px}
+.blog-cards .card .content-card p{margin:0;font-size:14px}
 }

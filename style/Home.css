@@ -120,7 +120,11 @@ section.Hero-Home{padding-top:0;display:flex;flex-direction:row;justify-content:
 .Blog-Home .top{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}
 .Blog-Home .cards .card h2{color:#000;margin:0;padding-top:20px;padding-bottom:14px;font-size:24px;font-weight:600;text-wrap:wrap}
 .Blog-Home .top .info{width:calc(100% - 48px);padding:0 24px}
-.Blog-Home .top .buttons{width:calc(100% - 48px);padding:0 24px}
+.Blog-Home .top .info h2 {
+    padding-bottom: 32px;
+}
+.Blog-Home .top .buttons{width:calc(100% - 48px);padding:0 24px;margin:0;gap:9.66px}
+.Blog-Home .top .buttons a{padding:10px 20px;font-size:12px;}
 .Blog-Home .Blog-p{justify-content:center}
 .AboutUs-Home .left .bottom{padding:1rem;max-width:100%;width:auto;background-color:#e8e8ff;border-top-left-radius:33px;border-top-right-radius:33px;border-bottom-right-radius:0;border-bottom-left-radius:33px}
 }
