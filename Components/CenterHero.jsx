@@ -11,10 +11,8 @@ const CenterHero = ({
   prefix,
   suffix,
   span,
-  circle,
   font,
 }) => {
-  // Function to get the appropriate SVG based on subtitle
   const getSVG = () => {
     switch (subtitle) {
       case "Contact":

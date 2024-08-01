@@ -79,7 +79,6 @@ const Contact = () => {
         prefix=""
         suffix="with ElevateSphere"
         span="Get in Touch"
-        circle={{ Width: "449px", Height: "88px", Color: "#B290BA" }}
         button={{ Text: "Contact Us", Link: "/contact", showArrow: true }}
         font={spaceGrotesk}
       />
@@ -136,6 +135,7 @@ const Contact = () => {
         ]}
         blogCardsFont={spaceGrotesk.className}
       />
+
       <ContactComp />
     </div>
   );

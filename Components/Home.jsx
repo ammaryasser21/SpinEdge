@@ -201,7 +201,7 @@ const Home = () => {
       </section>
 
       <ContactComp />
-
+      
       <BlogSection
         primaryText="Blog"
         subheading="Navigating the Digital Sphere"

@@ -46,10 +46,11 @@ const About = () => {
         suffix="Visions into Reality"
         span="Digital"
         button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
-        circle={{ Width: "275px", Height: "88px", Color: "#B7BA90" }}
         font={spaceGrotesk}
       />
+
       <Stats />
+
       <section className="OurMission">
         <Info
           title="Learn More"
@@ -70,6 +71,7 @@ const About = () => {
           />
         </div>
       </section>
+
       <section className="OurVision">
         <CenterHero
           showImages={false}

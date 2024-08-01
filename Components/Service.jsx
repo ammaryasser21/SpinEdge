@@ -77,9 +77,9 @@ const Service = () => {
         suffix=""
         span="services"
         button={{ Text: "Contact Us", Link: "/contact", showArrow: true }}
-        circle={{ Width: "308px", Height: "88px", Color: "#9094BA" }}
         font={spaceGrotesk}
       />
+      
       <section className="service-cards">
         {services.map((service) => (
           <Card
@@ -91,6 +91,7 @@ const Service = () => {
           />
         ))}
       </section>
+
       <ContactComp />
     </div>
   );

@@ -37,7 +37,6 @@ const Blog = () => {
         suffix="Sphere"
         span="Digital"
         button={{ Text: "Contact Us", Link: "/contact", showArrow: false }}
-        circle={{ Width: "267px", Height: "94px", Color: "#9BBA90" }}
         font={spaceGrotesk}
       />
 
@@ -71,6 +70,7 @@ const Blog = () => {
         blogCardsFont={spaceGrotesk.className}
         customButtonProps={{ center: false }}
       />
+
       <ContactComp />
     </div>
   );
