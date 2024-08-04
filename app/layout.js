@@ -1,6 +1,6 @@
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
 import '@/style/App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './globals.css'
