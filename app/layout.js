@@ -1,7 +1,7 @@
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import '../style/App.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import '@/style/App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './globals.css'
 import { Raleway , Space_Grotesk } from 'next/font/google'
