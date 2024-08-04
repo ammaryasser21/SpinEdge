@@ -15,13 +15,20 @@ section.Hero-Home{padding-top:0;display:flex;flex-direction:row;justify-content:
 .Hero-Home .art img[alt=art2]{bottom:0;right:0}
 .AboutUs-Home{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:stretch;padding:80px 0}
 .AboutUs-Home .border:before{content:"";display:block;width:100px;height:100px;position:absolute;border-radius:50%;bottom:0;right:0;box-shadow:50px 50px 0 0 #e8e8ff}
-.top_left{background-color:#fff;flex:1 1 671px;overflow:hidden;position:relative}
-.AboutUs-Home .info p:not(:first-child){font-size:20px;color:var(--text-s-color);margin:0;padding-bottom:29px}
-.AboutUs-Home .img{display:grid;place-items:center;padding:21px 0;padding-bottom:0;background-color:#e8e8ff;border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:0;border-bottom-left-radius:0;flex:1 1 calc(467px - 32px)}
+.top_left{background-color:#fff;flex:1 1 714px;overflow:hidden;position:relative}
+.AboutUs-Home .info p:not(:first-child) {
+    font-size: 20px;
+    color: var(--text-ss-color);
+    margin: 0;
+    padding-bottom: 29px;
+    padding-right: 45px;
+    text-wrap: wrap;
+}
+.AboutUs-Home .img{display:grid;place-items:center;padding:21px 16px;padding-bottom:0;background-color:#e8e8ff;border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:0;border-bottom-left-radius:0;}
 .AboutUs-Home .card .img{padding:0;place-items:center;background-color:transparent;-o-border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px;-ms-border-radius:30px;border-radius:30px;flex:1 1;margin:0}
-.AboutUs-Home .bottom_left{padding:16px;padding-right:0;padding-bottom:0;background-color:#e8e8ff;border-top-left-radius:33px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:33px;flex:1 1 661px}
-.AboutUs-Home .bottom_left .buttons{margin-top:0;width:auto;display:flex;background-color:#fff;padding:13px 0;-o-border-radius:30px;flex-direction:row;justify-content:space-evenly;gap:0rem;align-items:center;-webkit-border-radius:30px;-moz-border-radius:30px;-ms-border-radius:30px;border-radius:30px}
-.AboutUs-Home .bottom_left .buttons a{width:40%;text-align:center;padding:1rem;margin:0;border-radius:54px;justify-content:center}
+.AboutUs-Home .bottom_left{padding:16px;padding-right:0;padding-bottom:0;background-color:#e8e8ff;border-top-left-radius:33px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:33px;flex:1 1 703px}
+.AboutUs-Home .bottom_left .buttons{margin-top:0;width:auto;display:flex;background-color:#fff;padding:14px;-o-border-radius:30px;flex-direction:row;justify-content:center;gap:14px;align-items:center;-webkit-border-radius:30px;-moz-border-radius:30px;-ms-border-radius:30px;border-radius:30px}
+.AboutUs-Home .bottom_left .buttons a{width:44%;text-align:center;padding:1rem;margin:0;border-radius:20px;justify-content:center}
 .AboutUs-Home .bottom_left p{background-color:#fff;padding:0 20px;padding-top:14px;padding-bottom:41px;border-radius:20px;margin-top:20px;margin-bottom:18px;color:var(--text-ss-color);font-size:20px;line-height:1.5;text-wrap:pretty}
 .AboutUs-Home .cards{display:flex;justify-content:space-evenly;align-items:stretch;padding:16px;background-color:#e8e8ff;border-radius:30px;border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:30px;border-bottom-left-radius:0;flex:1 1 calc(451px - 32px);gap:17px}
 .AboutUs-Home .cards .card{width:43%;display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;flex-wrap:wrap;text-align:center;text-wrap:balance;background-color:#fff;padding:20px 18px;border-radius:35px;flex:1 1 209px}
@@ -30,7 +37,10 @@ section.Hero-Home{padding-top:0;display:flex;flex-direction:row;justify-content:
 .AboutUs-Home .cards .card p{font-size:12px;color:var(--text-ss-color);margin:0;font-weight:400;text-wrap:pretty;line-height:1.5}
 .Services-Home{display:flex;flex-direction:column;gap:40px}
 .Services-Home .info{width:100%}
-.Services-Home .info h1{font-size:53px}
+.Services-Home .info h1 {
+    font-size: 53px;
+    width: 50%;
+}
 .Services-Home .cards{width:100%;display:flex;flex-direction:row;gap:30px;justify-content:center;align-items:stretch;flex-wrap:wrap}
 .Services-Home .cards .card{display:flex;flex-direction:column;padding:30px 20px;padding-bottom:2rem;border-radius:30px;flex:1 1 calc(270px - 120px)}
 .Services-Home .cards .card:nth-child(1){background-color:#ddedcc}
@@ -76,8 +86,7 @@ section.Hero-Home{padding-top:0;display:flex;flex-direction:row;justify-content:
 .AboutUs-Home .img{width:calc(100% - 48px);display:flex;justify-content:center;padding:24px;background-color:#e8e8ff;border-radius:0;border-top-left-radius:30px;border-top-right-radius:30px;border-bottom-right-radius:0;border-bottom-left-radius:0;flex:1 1 auto}
 .AboutUs-Home .img img{width:100%;height:252px}
 .AboutUs-Home .bottom_left{padding:16px;padding-bottom:0;background-color:#e8e8ff;-o-border-radius:0;flex:1 1 calc(100% - 32px);-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;border-radius:0}
-.AboutUs-Home .bottom_left .buttons{padding:14px;gap:14px}
-.AboutUs-Home .bottom_left .buttons a{width:auto;text-align:center;padding:16px 30px;margin:0;border-radius:54px;justify-content:center;font-size:16px;gap:16px}
+.AboutUs-Home .bottom_left .buttons a{width: 37%;text-align:center;margin:0;font-size:16px;}
 .AboutUs-Home .bottom_left p{background-color:#fff;padding:14px 20px;border-radius:20px;margin-top:12px;margin-bottom:40px;font-size:14px}
 .AboutUs-Home .cards .card{width:calc(100% - 66px);background-color:#fff;padding:29px 33px;border-radius:32.73px}
 .AboutUs-Home .cards{width:calc(100% - 48px);gap:12px;padding:0 24px;padding-bottom:24px;border-bottom-right-radius:30px;border-bottom-left-radius:30px}
@@ -85,7 +94,7 @@ section.Hero-Home{padding-top:0;display:flex;flex-direction:row;justify-content:
 .AboutUs-Home .cards .card p{font-size:14px}
 .AboutUs-Home .cards .card .img img{width:160px;height:160px}
 .Services-Home .info{width:calc(100% - 48px);padding:0 24px}
-.Services-Home .info h1{font-size:36px;font-weight:600}
+.Services-Home .info h1{font-size:36px;font-weight:600;width: auto;}
 .Services-Home .cards{width:calc(100% - 48px);display:flex;flex-direction:column;gap:30px;padding:0 24px;justify-content:center;align-items:center;flex-wrap:wrap}
 .Services-Home .cards .card{width:87.692308%;display:flex;flex-direction:column;align-items:center;border-radius:30px;padding:30px 20px;text-align:center}
 .Services-Home .cards .card h2{font-size:24px}

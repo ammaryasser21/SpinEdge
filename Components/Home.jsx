@@ -88,7 +88,7 @@ const Home = () => {
             src="/images/about-main.png"
             alt="About Main"
             width={423}
-            height={322}
+            height={340}
           />
         </div>
         <div className="bottom_left">

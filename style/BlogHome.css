@@ -7,7 +7,7 @@
 .Blog-Home .cards{display:flex;justify-content:space-between;align-items:stretch}
 .Blog-Home .cards .card{min-width:300px;display:flex;flex-direction:column;align-items:center;border-radius:50px;padding:2rem 1rem;flex:1 1 calc(30% - 2rem);flex-wrap:wrap}
 .Blog-Home .cards .card:nth-child(1) .img{background-color:#ddcced}
-.Blog-Home .Blog-p{display:flex;gap:10px;justify-content:flex-start;width:100%;align-items:center}
+.Blog-Home .Blog-p{display:flex;gap:22px;justify-content:flex-start;width:100%;align-items:center}
 .Blog-Home .cards .card:nth-child(2) .img{background-color:#edddcc}
 .Blog-Home .cards .card:nth-child(3) .img{background-color:#cceded}
 .Blog-Home .cards .card .img{border-radius:26px;display:grid;place-items:center;width:100%;min-height:300px;margin-bottom:32px}
@@ -15,7 +15,7 @@
 .Blog-Home .cards .card h2{color:#000;margin:0;padding-top:20px;padding-bottom:14px;font-size:22px;text-wrap:wrap}
 .Blog-Home .cards .card p{color:#606060;line-height:1.6;font-weight:400;margin:0;font-size:14px;text-wrap:pretty;padding-right:1px;font-family:'__Space_Grotesk_587f35','__Space_Grotesk_Fallback_587f35';font-style:normal}
 .Blog-Home .cards .card p a{color:#000;font-weight:700;text-wrap:nowrap;cursor:pointer}
-.Blog-Home .cards .card .Blog-p p:first-child{color:#fff;background-color:var(--p-color);display:flex;align-items:baseline;gap:10px;border-radius:24px;padding:12px 22px;border:none;margin:0}
+.Blog-Home .cards .card .Blog-p p:first-child{color:#fff;background-color:var(--p-color);display:flex;align-items:baseline;gap:10px;border-radius:24px;padding:14px 24px;border:none;margin:0}
 .Blog-Home .cards .card .Blog-p p:last-child{color:var(--text-s-color);margin:0}
 @media (max-width:1111px){
 .Blog-Home .cards{display:flex;justify-content:center;align-items:stretch;flex-wrap:wrap}
